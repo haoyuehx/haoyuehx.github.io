@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>队列 on My Digital Garden</title>
+    <link>/garden_tags/%E9%98%9F%E5%88%97/</link>
+    <description>Recent content in 队列 on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Sun, 06 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/%E9%98%9F%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>单调队列</title>
+      <link>/garden/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

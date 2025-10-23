@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Avl_tree on My Digital Garden</title>
+    <link>/garden_tags/avl_tree/</link>
+    <description>Recent content in Avl_tree on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/avl_tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AVL树</title>
+      <link>/garden/avl%E6%A0%91/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/avl%E6%A0%91/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+              ],
+              throwOnError: false
+            });"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+    
+    
+    
+    <title>My Digital Garden | vscode vim keyboard</title>
+    <meta name="description" content="">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://ghchart.rshah.org; default-src 'self';">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">Haoyue</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Digital Garden</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/links/"> Links</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container mt-6 items-start gap-x-10 md:flex">
+
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">vscode vim keyboard</h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                Created Jul 27, 2025 -
+                
+                Last updated: Jul 27, 2025
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                    
+                    
+                    <span class="badge tag-badge">vim</span>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        
+        <div class="main-content">
+            <ol>
+<li>基本开关</li>
+</ol>
+<ul>
+<li>
+<p><code>&quot;vim.easymotion&quot;: true</code><br>
+打开 EasyMotion 功能：按 <code>&lt;leader&gt;&lt;leader&gt; + 某个字母</code> 后，屏幕上每个可见单词/字符会出现一个高亮字母，再按对应字母就能直接跳过去。</p>
+</li>
+<li>
+<p><code>&quot;vim.incsearch&quot;: true</code><br>
+实时搜索高亮：输入 <code>/keyword</code> 时，每敲一个字符就即时把匹配到的文字高亮出来。</p>
+</li>
+<li>
+<p><code>&quot;vim.useSystemClipboard&quot;: true</code><br>
+复制/粘贴时默认用系统剪贴板。即按 <code>y</code> 复制的内容可以直接 <code>Ctrl+V</code> 粘到别的软件里。</p>
+</li>
+<li>
+<p><code>&quot;vim.useCtrlKeys&quot;: true</code><br>
+允许 Vim 接管 VS Code 默认的 <code>Ctrl+?</code> 快捷键（比如 <code>Ctrl+f</code> 不再是“查找”，而是 Vim 的向下翻页）。后面 <code>handleKeys</code> 又把部分 <code>Ctrl+?</code> 禁用了。</p>
+</li>
+<li>
+<p><code>&quot;vim.hlsearch&quot;: true</code><br>
+搜索结束后仍然把上一次搜索结果高亮显示，直到你手动 <code>:nohl</code>。</p>
+</li>
+</ul>
+<hr>
+<ol start="2">
+<li>Insert 模式的小技巧</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#d88200">&#34;vim.insertModeKeyBindings&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">{</span> <span style="color:#f92672">&#34;before&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;j&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;j&#34;</span><span style="color:#111">],</span> <span style="color:#f92672">&#34;after&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;&lt;Esc&gt;&#34;</span><span style="color:#111">]</span> <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">]</span>
+</span></span></code></pre></div><p>在插入模式下连续按两次 <code>j</code> 相当于按一次 <code>Esc</code>，回到普通模式。很多 Vim 用户嫌 <code>Esc</code> 太远，就这样改。</p>
+<hr>
+<ol start="3">
+<li>Normal 模式的自定义快捷键<br>
+（下面 <code>&lt;leader&gt;</code> 统一被设成了空格键 <code>&lt;space&gt;</code>）</li>
+</ol>
+<ul>
+<li>
+<p><code>&lt;leader&gt; + d</code><br>
+等价于按 <code>d d</code>，删除当前行。</p>
+</li>
+<li>
+<p><code>Ctrl + n</code><br>
+执行 <code>:nohl</code>，取消上一次搜索的高亮。</p>
+</li>
+<li>
+<p><code>K</code>（大写）<br>
+把光标所在行从中间断开，相当于按 <code>O</code> 再回车，但无声执行。</p>
+</li>
+<li>
+<p><code>g d</code><br>
+把光标所在符号的“定义”在<strong>右侧</strong>打开（VS Code 的“侧边预览”）。</p>
+</li>
+<li>
+<p><code>g i</code><br>
+先水平分屏，然后跳到光标符号的“实现”文件。</p>
+</li>
+<li>
+<p><code>g t</code><br>
+先水平分屏，然后跳到光标符号的“类型定义”文件。</p>
+</li>
+<li>
+<p><code>r n</code><br>
+重命名光标所在符号（等价于 VS Code 的 <code>F2</code>）。</p>
+</li>
+<li>
+<p><code>f f</code><br>
+对整个文件执行格式化（<code>Format Document</code>）。</p>
+</li>
+<li>
+<p><code>s n</code><br>
+把当前标签页复制到右侧新分栏（相当于 Vim 的 <code>Ctrl-w v</code>）。</p>
+</li>
+<li>
+<p><code>s c</code><br>
+关闭当前标签页（相当于 Vim 的 <code>Ctrl-w c</code>）。</p>
+</li>
+<li>
+<p><code>s h</code> / <code>s l</code><br>
+向左/向右切换标签页（Vim 原生 <code>g T</code> / <code>g t</code>）。</p>
+</li>
+<li>
+<p><code>s s</code><br>
+循环跳到下一个编辑器组（在多个分栏之间来回）。</p>
+</li>
+<li>
+<p><code>z z</code><br>
+一键进入/退出 Zen Mode（全屏、无干扰写作模式）。</p>
+</li>
+</ul>
+<hr>
+<ol start="4">
+<li>Leader 键</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#d88200">&#34;vim.leader&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#d88200">&#34;&lt;space&gt;&#34;</span>
+</span></span></code></pre></div><p>把空格键设成“前缀键”。所以上面所有 <code>s n</code>、<code>f f</code> 等组合键都要先按一下空格，再按后面那个字母。</p>
+<hr>
+<ol start="5">
+<li>把部分 Ctrl 组合键还给 VS Code</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#d88200">&#34;vim.handleKeys&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;&lt;C-a&gt;&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;&lt;C-f&gt;&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;&lt;C-c&gt;&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;&lt;C-b&gt;&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;&lt;C-0&gt;&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>这几个键不再由 Vim 接管，保持 VS Code 默认行为：</p>
+<ul>
+<li><code>Ctrl+a</code> 全选</li>
+<li><code>Ctrl+f</code> 查找</li>
+<li><code>Ctrl+c</code> 复制</li>
+<li><code>Ctrl+b</code> 打开/关闭侧边栏</li>
+<li><code>Ctrl+0</code> 聚焦侧边栏</li>
+</ul>
+
+        </div>
+
+        
+        <aside class="sidebar">
+            <h5>目录导航</h5>
+            <nav id="TableOfContents"></nav>
+        </aside>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Haoyuehx © 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://space.bilibili.com/3494363854276671" target="_blank"><i class="fab fa-bilibili"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-qq"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+            
+            <a class="footer-social px-2"  href="https://t.me/haoyuehx" target="_blank"><i class="fab fa-telegram"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            
+            <a class="footer-social px-2"  href="https://x.com/Haoyuehx" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.zhihu.com/people/4skcf3" target="_blank"><i class="fab fa-zhihu"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/Haoyuehexi" target="_blank"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

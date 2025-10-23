@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on My Digital Garden</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Syntax</title>
+      <link>/projects/project1/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/projects/project1/</guid>
+      <description>Example of markdown syntax you can use to edit your content</description>
+    </item>
+    <item>
+      <title>Theme Documentation</title>
+      <link>/projects/project2/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/projects/project2/</guid>
+      <description>Details on how to create and update content on your site</description>
+    </item>
+    <item>
+      <title>Another Project</title>
+      <link>/projects/project3/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/projects/project3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NJU PA</title>
+      <link>/projects/project4/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/projects/project4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MIT 6.S081</title>
+      <link>/projects/project5/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/projects/project5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSAPP lab</title>
+      <link>/projects/project6/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/projects/project6/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

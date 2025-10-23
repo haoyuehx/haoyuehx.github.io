@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on My Digital Garden</title>
+    <link>/garden_tags/nginx/</link>
+    <description>Recent content in Nginx on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用nginx部署网站</title>
+      <link>/garden/nginx%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/nginx%E9%83%A8%E7%BD%B2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

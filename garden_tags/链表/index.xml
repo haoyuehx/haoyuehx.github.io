@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>链表 on My Digital Garden</title>
+    <link>/garden_tags/%E9%93%BE%E8%A1%A8/</link>
+    <description>Recent content in 链表 on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>链表模板</title>
+      <link>/garden/%E9%93%BE%E8%A1%A8%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/%E9%93%BE%E8%A1%A8%E6%A8%A1%E6%9D%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43; STL list</title>
+      <link>/garden/c&#43;&#43;-stl-list/</link>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/c&#43;&#43;-stl-list/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

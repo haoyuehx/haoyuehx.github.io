@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+              ],
+              throwOnError: false
+            });"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+    
+    
+    
+    <title>My Digital Garden | 字符串匹配算符</title>
+    <meta name="description" content="">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://ghchart.rshah.org; default-src 'self';">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">Haoyue</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Digital Garden</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/links/"> Links</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container mt-6 items-start gap-x-10 md:flex">
+
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">字符串匹配算符</h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                Created Mar 12, 2025 -
+                
+                Last updated: Mar 12, 2025
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                    
+                    
+                    <span class="badge tag-badge">algorithm</span>
+                    
+                    <span class="badge tag-badge">模板</span>
+                    
+                    <span class="badge tag-badge">字符串</span>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        
+        <div class="main-content">
+            <h2 id="朴素模式匹配算法"id="朴素模式匹配算法"
+>朴素模式匹配算法 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/#朴素模式匹配算法&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>朴素模式匹配算法是字符串模式匹配算法中最简单的蛮力解法，有称为BF算法</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">PatternMatchBF</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">t</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">p</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlen</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlen</span><span style="color:#111">(</span><span style="color:#111">t</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">p</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">m</span><span style="color:#111">;</span> <span style="color:#111">p</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">m</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">p</span> <span style="color:#f92672">+</span> <span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#111">t</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">==</span> <span style="color:#111">m</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">p</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">m</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">p</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="kmp算法"id="kmp算法"
+>KMP算法 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/#kmp算法&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="查找过程"id="查找过程"
+>查找过程 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/#查找过程&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>以<code>W=&quot;ABCDABD&quot;</code>，<code>S=&quot;ABC ABCDAB ABCDABCDABDE&quot;</code>为例说明查找过程。查找过程同时使用两个循环变量m和i：</p>
+<ul>
+<li>m代表主文字符串S内匹配字符串W的当前查找位置，</li>
+<li>i代表匹配字符串W当前做比较的字符位置。</li>
+</ul>
+<pre tabindex="0"><code>             1         2  
+m: 01234567890123456789012
+S: ABC ABCDAB ABCDABCDABDE
+W: ABCDABD
+i: 0123456
+</code></pre><p>从W与S的开头比较起。比对到S[3](=&rsquo; &lsquo;)时，发现W<a href="='D'">3</a>与之不符。接著并不是从S[1]比较下去。已经知道S[1]~S[3]不与W[0]相合。因此，略过这些字元，令m = 4以及i = 0。</p>
+<pre tabindex="0"><code>             1         2  
+m: 01234567890123456789012
+S: ABC ABCDAB ABCDABCDABDE
+W:     ABCDABD
+i:     0123456
+</code></pre><p>如上所示，检核了&quot;ABCDAB&quot;这个字串。然而，下一字符便不相合。可以注意到，&ldquo;AB&quot;在&quot;ABCDAB&quot;的头尾处均有出现。这意味著尾端的&quot;AB&quot;可以作为下次比较的起始点。因此，令m = 8, i = 2，继续比较。</p>
+<pre tabindex="0"><code>             1         2  
+m: 01234567890123456789012
+S: ABC ABCDAB ABCDABCDABDE
+W:         ABCDABD
+i:         0123456
+</code></pre><p>于m = 10的地方，又出现不相符的情况。类似地，令m = 11, i = 0继续比较：</p>
+<pre tabindex="0"><code>             1         2  
+m: 01234567890123456789012
+S: ABC ABCDAB ABCDABCDABDE
+W:            ABCDABD
+i:            0123456
+</code></pre><p>这时，S<a href="='C'">17</a>不与W[6]相同，但是已匹配部分&quot;ABCDAB&quot;亦为首尾均有&quot;AB&rdquo;，采取一贯的作法，令m = 15和i = 2，继续搜寻。</p>
+<pre tabindex="0"><code>             1         2  
+m: 01234567890123456789012
+S: ABC ABCDAB ABCDABCDABDE
+W:                ABCDABD
+i:                0123456
+</code></pre><p>找到完全匹配的字串了，其起始位置于S[15]的地方。</p>
+<ol>
+<li>核心思想
+当出现失配情况时，如何将模式串向右移动正确的位数。</li>
+<li>计算模式串向右移动的位数
+KMP算法中模式串向右移动的位数由已匹配部分字符串的最长公共前后缀长度确定。</li>
+</ol>
+<ul>
+<li>
+<p>(1) 字符串特征向量
+首先引入字符串特征向量概念。长度为m的字符串t的特征向量是一个m维向量，通常记作<strong>next</strong>，且用数组形式进行存储，所以特征向量也可以非正式地称为<strong>next</strong>数组。</p>
+<p>以&quot;ABCDABD&quot;为例</p>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>i</th>
+          <th>字串t[0..i]</th>
+          <th>前缀集合</th>
+          <th>后缀集合</th>
+          <th>最长公共前缀</th>
+          <th>特征向量第i位分量</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>i = 0</td>
+          <td>A</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>-1</td>
+      </tr>
+      <tr>
+          <td>i = 1</td>
+          <td>AB</td>
+          <td>A</td>
+          <td>B</td>
+          <td>0</td>
+          <td>-1</td>
+      </tr>
+      <tr>
+          <td>i = 2</td>
+          <td>ABC</td>
+          <td>A,AB</td>
+          <td>C,BC</td>
+          <td>0</td>
+          <td>-1</td>
+      </tr>
+      <tr>
+          <td>i = 3</td>
+          <td>ABCD</td>
+          <td>A,AB,ABC</td>
+          <td>D,CD,BCD</td>
+          <td>0</td>
+          <td>-1</td>
+      </tr>
+      <tr>
+          <td>i = 4</td>
+          <td>ABCDA</td>
+          <td>A,AB,ABC,ABCD</td>
+          <td>A,DA,CDA,BCDA</td>
+          <td>A</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>i = 5</td>
+          <td>ABCDAB</td>
+          <td>A,AB,ABC,ABCD,ABCDA</td>
+          <td>B,AB,DAB,CDDAB,BCDAB</td>
+          <td>AB</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>i = 6</td>
+          <td>ABCDABD</td>
+          <td>A,AB,ABC,ABCD,ABCDA,ABCDAB</td>
+          <td>D,BD,ABD,DABD,CDABD,BCDABD</td>
+          <td>0</td>
+          <td>-1</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>KMP主要流程</strong>：在匹配到模式串t的第i位(i从1开始)发生失配时，将模式串向右移动<code>i - 1 - next[i-1]</code>(理解：因为第i位字符不匹配，所以至少移动i-1位，由于有公共字串，需要减去公共字串的长度)，从模式串t的第<code>next[i-1]+1</code>位重新开始分配，直到达字符串末尾。</p>
+<ul>
+<li>(2)字符串特征向量的计算方法</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#75af00">GetNext</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">t</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">next</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlen</span><span style="color:#111">(</span><span style="color:#111">t</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">next</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">m</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">next</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">j</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">t</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#111">t</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">next</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">t</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">t</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">next</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">j</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">next</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">next</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><ul>
+<li>(3)字符串匹配的KMP算法</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">PatternMatchKMP</span><span style="color:#111">(</span><span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span><span style="color:#f92672">*</span> <span style="color:#111">t</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlen</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#75af00">strlen</span><span style="color:#111">(</span><span style="color:#111">t</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">&gt;=</span> <span style="color:#111">m</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span><span style="color:#f92672">*</span> <span style="color:#111">next</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span><span style="color:#f92672">*</span><span style="color:#111">)</span><span style="color:#75af00">malloc</span><span style="color:#111">(</span><span style="color:#111">m</span> <span style="color:#f92672">*</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75af00">GetNext</span><span style="color:#111">(</span><span style="color:#111">t</span><span style="color:#111">,</span> <span style="color:#111">next</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">n</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">m</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">t</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#111">next</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">j</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">==</span> <span style="color:#111">m</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">p</span> <span style="color:#f92672">=</span> <span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#111">m</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">p</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div>
+        </div>
+
+        
+        <aside class="sidebar">
+            <h5>目录导航</h5>
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#朴素模式匹配算法">朴素模式匹配算法</a></li>
+        <li><a href="#kmp算法">KMP算法</a>
+          <ul>
+            <li><a href="#查找过程">查找过程</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </aside>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Haoyuehx © 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://space.bilibili.com/3494363854276671" target="_blank"><i class="fab fa-bilibili"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-qq"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+            
+            <a class="footer-social px-2"  href="https://t.me/haoyuehx" target="_blank"><i class="fab fa-telegram"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            
+            <a class="footer-social px-2"  href="https://x.com/Haoyuehx" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.zhihu.com/people/4skcf3" target="_blank"><i class="fab fa-zhihu"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/Haoyuehexi" target="_blank"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

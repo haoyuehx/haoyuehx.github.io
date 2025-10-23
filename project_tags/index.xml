@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project_tags on My Digital Garden</title>
+    <link>/project_tags/</link>
+    <description>Recent content in Project_tags on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project_tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Csapp</title>
+      <link>/project_tags/csapp/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/project_tags/csapp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Operating System</title>
+      <link>/project_tags/operating-system/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/project_tags/operating-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Systems</title>
+      <link>/project_tags/computer-systems/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/project_tags/computer-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nju PA</title>
+      <link>/project_tags/nju-pa/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/project_tags/nju-pa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>/project_tags/markdown/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>/project_tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docs</title>
+      <link>/project_tags/docs/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/project_tags/docs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How-To</title>
+      <link>/project_tags/how-to/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/project_tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webapp</title>
+      <link>/project_tags/webapp/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/project_tags/webapp/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

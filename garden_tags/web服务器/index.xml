@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web服务器 on My Digital Garden</title>
+    <link>/garden_tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <description>Recent content in Web服务器 on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh连接</title>
+      <link>/garden/ssh%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/ssh%E8%BF%9E%E6%8E%A5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>服务器管理</title>
+      <link>/garden/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>使用nginx部署网站</title>
+      <link>/garden/nginx%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/nginx%E9%83%A8%E7%BD%B2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+              ],
+              throwOnError: false
+            });"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+    
+    
+    
+    <title>My Digital Garden | 查找算法合集</title>
+    <meta name="description" content="">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://ghchart.rshah.org; default-src 'self';">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">Haoyue</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Digital Garden</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/links/"> Links</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container mt-6 items-start gap-x-10 md:flex">
+
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">查找算法合集</h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                Created Jun 3, 2025 -
+                
+                Last updated: Jun 3, 2025
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                    
+                    
+                    <span class="badge tag-badge">algorithm</span>
+                    
+                    <span class="badge tag-badge">查找</span>
+                    
+                    <span class="badge tag-badge">数据结构</span>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        
+        <div class="main-content">
+            <h2 id="静态查找表"id="静态查找表"
+>静态查找表 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#静态查找表&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="顺序查找"id="顺序查找"
+>顺序查找 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#顺序查找&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>时间复杂度$O(n)$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">sequential_search</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">length</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">length</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">i</span><span style="color:#111">;</span> <span style="color:#75715e">// 找到返回索引
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#75715e">// 未找到返回 -1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span>
+</span></span></code></pre></div><h3 id="二分查找"id="二分查找"
+>二分查找 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#二分查找&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><h4 id="标准二分查找"id="标准二分查找"
+>标准二分查找 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#标准二分查找&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h4><p>时间复杂度$O(\log n)$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">binary_search</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">length</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#111">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">left</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">right</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">mid</span> <span style="color:#f92672">=</span> <span style="color:#111">left</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#111">right</span> <span style="color:#f92672">-</span> <span style="color:#111">left</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">mid</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#111">mid</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#111">mid</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>传入low、high</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">BinarySearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">low</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">high</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">low</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">high</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">mid</span> <span style="color:#f92672">=</span> <span style="color:#111">low</span> <span style="color:#f92672">+</span> <span style="color:#111">(</span><span style="color:#111">high</span> <span style="color:#f92672">-</span> <span style="color:#111">low</span><span style="color:#111">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">mid</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">mid</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">low</span> <span style="color:#f92672">=</span> <span style="color:#111">mid</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">high</span> <span style="color:#f92672">=</span> <span style="color:#111">mid</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>优点：</p>
+<ul>
+<li>查找时间效率较高
+缺点：</li>
+<li>查找表记录按照关键字的值有序排列</li>
+<li>只适用于有序连续顺序表</li>
+</ul>
+<h4 id="插值查找"id="插值查找"
+>插值查找 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#插值查找&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h4><p>时间复杂度$O(\log(\log n))$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">inter_search</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">length</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">,</span> <span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#111">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">m</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">left</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">right</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">left</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">right</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#111">left</span> <span style="color:#f92672">+</span> <span style="color:#111">((</span><span style="color:#111">right</span> <span style="color:#f92672">-</span> <span style="color:#111">left</span><span style="color:#111">)</span> <span style="color:#f92672">*</span> <span style="color:#111">(</span><span style="color:#111">key</span> <span style="color:#f92672">-</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">left</span><span style="color:#111">]))</span> <span style="color:#f92672">/</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">right</span><span style="color:#111">]</span> <span style="color:#f92672">-</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">left</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">m</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">left</span> <span style="color:#f92672">||</span> <span style="color:#111">m</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">right</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">break</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">key</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">m</span><span style="color:#111">])</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#111">m</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">key</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">m</span><span style="color:#111">])</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#111">m</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">m</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">left</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">left</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h4 id="斐波那契查找"id="斐波那契查找"
+>斐波那契查找 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#斐波那契查找&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h4><p>时间复杂度$O(\log n)$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">FibonacciSearch</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">length</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 初始化斐波那契数列
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">fibMMm2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>   <span style="color:#75715e">// F(k-2)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">fibMMm1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>   <span style="color:#75715e">// F(k-1)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">fibM</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm2</span> <span style="color:#f92672">+</span> <span style="color:#111">fibMMm1</span><span style="color:#111">;</span> <span style="color:#75715e">// F(k)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 找到第一个大于等于 length 的斐波那契数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">fibM</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">length</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">fibMMm2</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">fibMMm1</span> <span style="color:#f92672">=</span> <span style="color:#111">fibM</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">fibM</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm2</span> <span style="color:#f92672">+</span> <span style="color:#111">fibMMm1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">offset</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">fibM</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">offset</span> <span style="color:#f92672">+</span> <span style="color:#111">fibMMm2</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span> <span style="color:#f92672">?</span> <span style="color:#111">offset</span> <span style="color:#f92672">+</span> <span style="color:#111">fibMMm2</span> <span style="color:#111">:</span> <span style="color:#111">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">fibM</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">fibMMm1</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">fibMMm2</span> <span style="color:#f92672">=</span> <span style="color:#111">fibM</span> <span style="color:#f92672">-</span> <span style="color:#111">fibMMm1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">offset</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">fibM</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">fibMMm1</span> <span style="color:#f92672">=</span> <span style="color:#111">fibMMm1</span> <span style="color:#f92672">-</span> <span style="color:#111">fibMMm2</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">fibMMm2</span> <span style="color:#f92672">=</span> <span style="color:#111">fibM</span> <span style="color:#f92672">-</span> <span style="color:#111">fibMMm1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 检查最后一个元素
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">fibMMm1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">offset</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">length</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">offset</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">offset</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h3 id="索引查找"id="索引查找"
+>索引查找 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#索引查找&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>时间复杂度$O(\sqrt{n})$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">;</span>    <span style="color:#75715e">// 索引关键字
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">pos</span><span style="color:#111">;</span>    <span style="color:#75715e">// 主表起始位置
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">}</span> <span style="color:#111">Index</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">index_sequential_search</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">arr</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">length</span><span style="color:#111">,</span> <span style="color:#111">Index</span> <span style="color:#111">index</span><span style="color:#111">[],</span> <span style="color:#00a8c8">int</span> <span style="color:#111">indexLen</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 找到 key 所在的区间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">indexLen</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">key</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">index</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 确定搜索区间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">int</span> <span style="color:#111">start</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">:</span> <span style="color:#111">index</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">].</span><span style="color:#111">pos</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">end</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">indexLen</span><span style="color:#111">)</span> <span style="color:#f92672">?</span> <span style="color:#111">index</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">].</span><span style="color:#111">pos</span> <span style="color:#111">:</span> <span style="color:#111">length</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 顺序查找
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">start</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">end</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">arr</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">j</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="动态查找表"id="动态查找表"
+>动态查找表 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#动态查找表&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><h3 id="二叉查找树"id="二叉查找树"
+>二叉查找树 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/#二叉查找树&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h3><p>树节点结构</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#00a8c8">typedef</span> <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">data</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">left</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">struct</span> <span style="color:#111">Node</span><span style="color:#f92672">*</span> <span style="color:#111">right</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span> <span style="color:#111">Node</span><span style="color:#111">,</span> <span style="color:#f92672">*</span><span style="color:#111">Nodeptr</span><span style="color:#111">;</span>
+</span></span></code></pre></div><ol>
+<li>查找操作
+时间复杂度O(h),h是树的高度</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#111">Nodeptr</span> <span style="color:#75af00">searchBST</span><span style="color:#111">(</span><span style="color:#111">Nodeptr</span> <span style="color:#111">bstree</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">bstree</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span> <span style="color:#f92672">||</span> <span style="color:#111">bstree</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span> <span style="color:#f92672">==</span> <span style="color:#111">key</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">bstree</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">key</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">bstree</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#75af00">searchBST</span><span style="color:#111">(</span><span style="color:#111">bstree</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span><span style="color:#111">,</span> <span style="color:#111">key</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#75af00">searchBST</span><span style="color:#111">(</span><span style="color:#111">bstree</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#111">key</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><ol start="2">
+<li>插入操作</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#111">Nodeptr</span> <span style="color:#75af00">createNode</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">data</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">Nodeptr</span> <span style="color:#111">newNode</span> <span style="color:#f92672">=</span> <span style="color:#111">(</span><span style="color:#111">Nodeptr</span><span style="color:#111">)</span><span style="color:#75af00">malloc</span><span style="color:#111">(</span><span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">Node</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">newNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">data</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">newNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#111">newNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">newNode</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 插入节点到BST
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">Nodeptr</span> <span style="color:#75af00">insertBST</span><span style="color:#111">(</span><span style="color:#111">Nodeptr</span> <span style="color:#111">root</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">data</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">root</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#75af00">createNode</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">data</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#75af00">insert</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span><span style="color:#111">,</span> <span style="color:#111">data</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">data</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#75af00">insert</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#111">data</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">root</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><ol start="3">
+<li>删除操作</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#111">Nodeptr</span> <span style="color:#75af00">deleteBST</span><span style="color:#111">(</span><span style="color:#111">Nodeptr</span> <span style="color:#111">root</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">key</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">root</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#00a8c8">return</span> <span style="color:#111">NULL</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">key</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span> <span style="color:#f92672">=</span> <span style="color:#75af00">deleteNode</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span><span style="color:#111">,</span> <span style="color:#111">key</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">key</span> <span style="color:#f92672">&gt;</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#75af00">deleteNode</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#111">key</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 找到目标节点
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">Nodeptr</span> <span style="color:#111">temp</span> <span style="color:#f92672">=</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">free</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">temp</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span> <span style="color:#f92672">==</span> <span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">Nodeptr</span> <span style="color:#111">temp</span> <span style="color:#f92672">=</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">free</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">return</span> <span style="color:#111">temp</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 两个子节点：找右子树最小值替代
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#111">Nodeptr</span> <span style="color:#111">minNode</span> <span style="color:#f92672">=</span> <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">minNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span> <span style="color:#f92672">!=</span> <span style="color:#111">NULL</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">minNode</span> <span style="color:#f92672">=</span> <span style="color:#111">minNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">left</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">minNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span> <span style="color:#f92672">=</span> <span style="color:#75af00">deleteNode</span><span style="color:#111">(</span><span style="color:#111">root</span><span style="color:#f92672">-&gt;</span><span style="color:#111">right</span><span style="color:#111">,</span> <span style="color:#111">minNode</span><span style="color:#f92672">-&gt;</span><span style="color:#111">data</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">root</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div>
+        </div>
+
+        
+        <aside class="sidebar">
+            <h5>目录导航</h5>
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#静态查找表">静态查找表</a>
+          <ul>
+            <li><a href="#顺序查找">顺序查找</a></li>
+            <li><a href="#二分查找">二分查找</a>
+              <ul>
+                <li><a href="#标准二分查找">标准二分查找</a></li>
+                <li><a href="#插值查找">插值查找</a></li>
+                <li><a href="#斐波那契查找">斐波那契查找</a></li>
+              </ul>
+            </li>
+            <li><a href="#索引查找">索引查找</a></li>
+          </ul>
+        </li>
+        <li><a href="#动态查找表">动态查找表</a>
+          <ul>
+            <li><a href="#二叉查找树">二叉查找树</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </aside>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Haoyuehx © 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://space.bilibili.com/3494363854276671" target="_blank"><i class="fab fa-bilibili"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-qq"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+            
+            <a class="footer-social px-2"  href="https://t.me/haoyuehx" target="_blank"><i class="fab fa-telegram"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            
+            <a class="footer-social px-2"  href="https://x.com/Haoyuehx" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.zhihu.com/people/4skcf3" target="_blank"><i class="fab fa-zhihu"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/Haoyuehexi" target="_blank"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

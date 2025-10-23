@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Csapp on My Digital Garden</title>
+    <link>/project_tags/csapp/</link>
+    <description>Recent content in Csapp on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project_tags/csapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSAPP lab</title>
+      <link>/projects/project6/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/projects/project6/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

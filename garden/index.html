@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+              ],
+              throwOnError: false
+            });"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+    
+    
+    
+    <title>My Digital Garden | Digital Garden</title>
+    <meta name="description" content="">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://ghchart.rshah.org; default-src 'self';">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">Haoyue</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Digital Garden</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/links/"> Links</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+
+<div class="container">
+    <div class="py-5 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4">Digital Garden</h1>
+            <p class="bio col-md-8 fs-4 serif">A collection of thoughts and articles at different development stages</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mb-5">
+
+    
+    <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Toolbar with button groups">
+        <i class="fas fa-filter"></i>
+        <div id="filters" class="button-group">
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-algorithm" autocomplete="off" data-filter=".js-iso-algorithm">
+            <label class="button" for=".js-iso-algorithm">algorithm</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-avl_tree" autocomplete="off" data-filter=".js-iso-avl_tree">
+            <label class="button" for=".js-iso-avl_tree">avl_tree</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-csapp" autocomplete="off" data-filter=".js-iso-csapp">
+            <label class="button" for=".js-iso-csapp">csapp</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-debug" autocomplete="off" data-filter=".js-iso-debug">
+            <label class="button" for=".js-iso-debug">debug</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-gdb" autocomplete="off" data-filter=".js-iso-gdb">
+            <label class="button" for=".js-iso-gdb">gdb</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-lldb" autocomplete="off" data-filter=".js-iso-lldb">
+            <label class="button" for=".js-iso-lldb">lldb</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-markdown" autocomplete="off" data-filter=".js-iso-markdown">
+            <label class="button" for=".js-iso-markdown">markdown</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-nginx" autocomplete="off" data-filter=".js-iso-nginx">
+            <label class="button" for=".js-iso-nginx">nginx</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-python" autocomplete="off" data-filter=".js-iso-python">
+            <label class="button" for=".js-iso-python">python</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-sort" autocomplete="off" data-filter=".js-iso-sort">
+            <label class="button" for=".js-iso-sort">sort</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-stl" autocomplete="off" data-filter=".js-iso-stl">
+            <label class="button" for=".js-iso-stl">stl</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-vim" autocomplete="off" data-filter=".js-iso-vim">
+            <label class="button" for=".js-iso-vim">vim</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-web服务器" autocomplete="off" data-filter=".js-iso-web服务器">
+            <label class="button" for=".js-iso-web服务器">web服务器</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-图论" autocomplete="off" data-filter=".js-iso-图论">
+            <label class="button" for=".js-iso-图论">图论</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-字符串" autocomplete="off" data-filter=".js-iso-字符串">
+            <label class="button" for=".js-iso-字符串">字符串</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-数据结构" autocomplete="off" data-filter=".js-iso-数据结构">
+            <label class="button" for=".js-iso-数据结构">数据结构</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-查找" autocomplete="off" data-filter=".js-iso-查找">
+            <label class="button" for=".js-iso-查找">查找</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-栈" autocomplete="off" data-filter=".js-iso-栈">
+            <label class="button" for=".js-iso-栈">栈</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-模板" autocomplete="off" data-filter=".js-iso-模板">
+            <label class="button" for=".js-iso-模板">模板</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-理论" autocomplete="off" data-filter=".js-iso-理论">
+            <label class="button" for=".js-iso-理论">理论</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-计算机系统" autocomplete="off" data-filter=".js-iso-计算机系统">
+            <label class="button" for=".js-iso-计算机系统">计算机系统</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-链表" autocomplete="off" data-filter=".js-iso-链表">
+            <label class="button" for=".js-iso-链表">链表</label>  
+            
+            
+            <input type="checkbox" class="btn-check" id=".js-iso-队列" autocomplete="off" data-filter=".js-iso-队列">
+            <label class="button" for=".js-iso-队列">队列</label>  
+            
+        </div>
+    </div>
+
+    
+    
+
+    
+
+</div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="blogposts">
+        
+        
+
+    
+
+<div class='col  js-iso-vim'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">vscode vim keyboard</h4>
+            
+            <a href="/garden/vscode-vim/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jul 27, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+<div class='col  js-iso-web服务器'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">服务器管理</h4>
+            
+            <a href="/garden/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 18, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+<div class='col  js-iso-数据结构'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">图的最小生成树</h4>
+            
+            <a href="/garden/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 18, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+<div class='col  js-iso-web服务器'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">ssh连接</h4>
+            
+            <a href="/garden/ssh%E8%BF%9E%E6%8E%A5/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 18, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+<div class='col  js-iso-数据结构'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">C语言计算器</h4>
+            
+            <a href="/garden/c%E8%AF%AD%E8%A8%80%E8%AE%A1%E7%AE%97%E5%99%A8/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 18, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-栈 js-iso-数据结构'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">栈模板</h4>
+            
+            <a href="/garden/%E6%A0%88/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 18, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-sort js-iso-数据结构'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">排序算法合集</h4>
+            
+            <a href="/garden/%E6%8E%92%E5%BA%8F%E5%90%88%E9%9B%86/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 9, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-查找 js-iso-数据结构'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">查找算法合集</h4>
+            
+            <a href="/garden/%E6%9F%A5%E6%89%BE%E5%90%88%E9%9B%86/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 3, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-查找 js-iso-数据结构 js-iso-avl_tree'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">AVL树</h4>
+            
+            <a href="/garden/avl%E6%A0%91/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jun 3, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-模板 js-iso-队列'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">单调队列</h4>
+            
+            <a href="/garden/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Apr 6, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-模板 js-iso-栈'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">单调栈</h4>
+            
+            <a href="/garden/%E5%8D%95%E8%B0%83%E6%A0%88/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Apr 6, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-链表 js-iso-algorithm js-iso-模板'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">链表模板</h4>
+            
+            <a href="/garden/%E9%93%BE%E8%A1%A8%E6%A8%A1%E6%9D%BF/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Mar 31, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+<div class='col  js-iso-python'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">python环境配置</h4>
+            
+            <a href="/garden/python_env/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Mar 18, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-模板 js-iso-字符串'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">字符串匹配算符</h4>
+            
+            <a href="/garden/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Mar 12, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-模板 js-iso-字符串'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">字符串</h4>
+            
+            <a href="/garden/%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Mar 12, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+<div class='col  js-iso-markdown'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">markdown绘图</h4>
+            
+            <a href="/garden/markdown%E7%BB%98%E5%9B%BE/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Mar 8, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+<div class='col  js-iso-图论 js-iso-algorithm'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">单源最短路径</h4>
+            
+            <a href="/garden/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Apr 23, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-csapp js-iso-lldb js-iso-debug'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">nju pa1.1</h4>
+            
+            <a href="/garden/nju-pa1.1/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Mar 6, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-模板'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">ST表模板</h4>
+            
+            <a href="/garden/st%E8%A1%A8/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Feb 19, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+<div class='col  js-iso-gdb js-iso-debug'>
+    <div class="card top-highlight">
+        <div class="card-body">
+             
+            <h4 class="card-title">GDB debug tutorial</h4>
+            <p class="card-text pb-3">参考 <a href="https://linuxconfig.org/gdb-debugging-tutorial-for-beginners">https://linuxconfig.org/gdb-debugging-tutorial-for-beginners</a></p>
+            
+            <a href="/garden/gdb-debug-tutorial/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Feb 19, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+<div class='col  js-iso-理论 js-iso-计算机系统'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">CSAPP 第六章 存储器层次结构</h4>
+            
+            <a href="/garden/csappcha6/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Feb 14, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-模板'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">并查集模板</h4>
+            
+            <a href="/garden/%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Feb 13, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+    
+
+<div class='col  js-iso-algorithm js-iso-链表 js-iso-stl'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">C&#43;&#43; STL list</h4>
+            
+            <a href="/garden/c&#43;&#43;-stl-list/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Feb 12, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    
+
+    
+
+<div class='col  js-iso-web服务器 js-iso-nginx'>
+    <div class="card top-highlight">
+        <div class="card-body">
+            
+            <h4 class="card-title pb-3">使用nginx部署网站</h4>
+            
+            <a href="/garden/nginx%E9%83%A8%E7%BD%B2/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Feb 10, 2025</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+<div class='col '>
+    <div class="card top-highlight">
+        <div class="card-body">
+             
+            <h4 class="card-title"></h4>
+            <p class="card-text pb-3"><h2 id="引入"id="引入"
+>引入 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/catalan/#引入&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>Catalan 数经常出现在各类计数问题中。比利时数学家 Eugène Charles Catalan 在 1958 年研究括号序列计数问题时发现了这一数列，它也因此得名。清朝数学家明安图早在 18 世纪 30 年代就已经发现这一数列。</p></p>
+            
+            <a href="/garden/catalan/" class="stretched-link"></a>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    
+                    
+                    <span style="font-size: small"> Jan 1, 0001</span>
+                </div>
+                <div class="col-6" style="text-align: right">
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+     </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Haoyuehx © 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://space.bilibili.com/3494363854276671" target="_blank"><i class="fab fa-bilibili"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-qq"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+            
+            <a class="footer-social px-2"  href="https://t.me/haoyuehx" target="_blank"><i class="fab fa-telegram"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            
+            <a class="footer-social px-2"  href="https://x.com/Haoyuehx" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.zhihu.com/people/4skcf3" target="_blank"><i class="fab fa-zhihu"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/Haoyuehexi" target="_blank"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>

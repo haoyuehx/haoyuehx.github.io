@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gdb on My Digital Garden</title>
+    <link>/garden_tags/gdb/</link>
+    <description>Recent content in Gdb on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Wed, 19 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/gdb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDB debug tutorial</title>
+      <link>/garden/gdb-debug-tutorial/</link>
+      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/gdb-debug-tutorial/</guid>
+      <description>参考 &lt;a href=&#34;https://linuxconfig.org/gdb-debugging-tutorial-for-beginners&#34;&gt;https://linuxconfig.org/gdb-debugging-tutorial-for-beginners&lt;/a&gt;</description>
+    </item>
+  </channel>
+</rss>

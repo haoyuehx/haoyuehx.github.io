@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Csapp on My Digital Garden</title>
+    <link>/garden_tags/csapp/</link>
+    <description>Recent content in Csapp on My Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Haoyuehx ©</copyright>
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/garden_tags/csapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nju pa1.1</title>
+      <link>/garden/nju-pa1.1/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/nju-pa1.1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
