@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Haoyuehx ©</copyright>
-    <lastBuildDate>Sun, 27 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/garden/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卡特兰数</title>
+      <link>/garden/catalan/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/catalan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>buaa co link</title>
+      <link>/garden/buaa_co_link/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/garden/buaa_co_link/</guid>
+      <description></description>
+    </item>
     <item>
       <title>vscode vim keyboard</title>
       <link>/garden/vscode-vim/</link>
@@ -150,13 +164,6 @@
       <description></description>
     </item>
     <item>
-      <title>CSAPP 第六章 存储器层次结构</title>
-      <link>/garden/csappcha6/</link>
-      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>/garden/csappcha6/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>并查集模板</title>
       <link>/garden/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link>
       <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
@@ -176,13 +183,6 @@
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
       <guid>/garden/nginx%E9%83%A8%E7%BD%B2/</guid>
       <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>/garden/catalan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/garden/catalan/</guid>
-      <description>&lt;h2 id=&#34;引入&#34;id=&#34;引入&#34;&#xA;&gt;引入 &#xA;&lt;button &#xA;    type=&#34;button&#34; &#xA;    class=&#34;anchor&#34; &#xA;    data-title=&#34;Copy link to clipboard&#34; &#xA;    aria-label=&#34;Copy link to clipboard&#34;&#xA;    onclick=&#34;navigator.clipboard.writeText(&amp;#34;/garden/catalan/#引入&amp;#34;);this.insertAdjacentHTML(&#39;afterend&#39;, &#39;&lt;div class=link-copied&gt;Link copied&lt;/div&gt;&#39;);setTimeout(() =&gt; { document.querySelectorAll(&#39;.link-copied&#39;).forEach(el =&gt; el.remove()); }, 3000);&#34;&#xA;&gt;&#xA;    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 96 960 960&#34; width=&#34;1em&#34;&gt;&#xA;        &lt;path d=&#34;M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z&#34;/&gt;&#xA;    &lt;/svg&gt;&#xA;&lt;/button&gt;&#xA;&lt;/h2&gt;&lt;p&gt;Catalan 数经常出现在各类计数问题中。比利时数学家 Eugène Charles Catalan 在 1958 年研究括号序列计数问题时发现了这一数列，它也因此得名。清朝数学家明安图早在 18 世纪 30 年代就已经发现这一数列。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

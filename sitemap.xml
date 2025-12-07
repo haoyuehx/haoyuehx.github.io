@@ -20,11 +20,23 @@
     <loc>/projects/project6/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/garden_tags/algorithm/</loc>
+    <lastmod>2025-12-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/garden_tags/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/garden/catalan/</loc>
+    <lastmod>2025-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/garden/buaa_co_link/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/garden_tags/computer-organization/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/garden_tags/vim/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
@@ -102,9 +114,6 @@
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/garden/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2025-06-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/garden_tags/algorithm/</loc>
     <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/garden_tags/%E6%A0%88/</loc>
@@ -269,15 +278,6 @@
     <loc>/garden/st%E8%A1%A8/</loc>
     <lastmod>2025-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/garden/csappcha6/</loc>
-    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/garden_tags/%E7%90%86%E8%AE%BA/</loc>
-    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/garden_tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/garden/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
     <lastmod>2025-02-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -316,8 +316,6 @@
   </url><url>
     <loc>/about/</loc>
     <lastmod>2005-01-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/garden/catalan/</loc>
   </url><url>
     <loc>/library_tags/</loc>
   </url>
