@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        crossorigin="anonymous" onload="renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+              ],
+              throwOnError: false
+            });"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+    
+    
+    
+    <title>My Digital Garden | </title>
+    <meta name="description"
+        content="">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'; 
+    img-src 'self' https://ghchart.rshah.org https://lain.bgm.tv; 
+    
+    style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline'; 
+    
+    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">Haoyue</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Digital Garden</a>
+                </li>
+                <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+                <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+                <li class='nav-item '>
+                    <a class="nav-link" href="/links/"> Links</a>
+                </li>
+                <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+                
+                <li class="nav-item px-2 pt-1">
+                    <a class="btn fa-solid fa-moon" id="dark-mode-toggle"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container mt-6 items-start gap-x-10 md:flex">
+
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center"></h1>
+        </div>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                Created Dec 6, 2025 -
+                
+                Last updated: Dec 6, 2025
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Growing 🌿</span>
+    
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                    
+                    
+                    <span class="badge tag-badge">algorithm</span>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        
+        <div class="main-content">
+            <p>动态规划一般用来解决最优化问题
+解决动态规划问题的四个步骤</p>
+<ol>
+<li>Characterize the structure of an optimal solution.(寻找最优解结构)</li>
+<li>Recursively define the value of an optimal solution.(最优解的递归函数,状态转移)</li>
+<li>Computing (Algorithms): Compute the value of an optimal solution in a bottom-up fashion(动态规划算法:按自底向上的方式计算最优值)</li>
+<li>Construct an optimal solution from computed information. (计算一个最优解)</li>
+</ol>
+<p>在算法导论中主要讲了以下个问题</p>
+<h1 id="钢条切割"id="钢条切割"
+>钢条切割 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#钢条切割&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>长度为 n 的钢管,一种最优的切割方式:$n = i_1 + i_2 +&hellip;+ i_k$
+切割为$k$段,$1 ≤ k ≤ n$, 每段的长度为 $i_1, i_2, . . . , i_k$ ,最大收益为:$r_n = p_{i_1} + p_{i_2} +&hellip;+ p_{i_k}$
+$r_n$ : $n$米长钢管的最优切割方式(最优:价格最高,收益最大)
+<img src="../../static/images/dp.png" alt="">
+一种方式我们可以遍历切割位置，递归求解：
+$$\begin{align}r_n = max {p_n , r_1 +r_{n-1}, r_2 + r_{n-2},&hellip;,r_{n-1} + r_1}\end{align}$$
+如果要解决大小为$n$的问题，就需要先解决形式一样，规模更小的子问题。通过子问题的最优解，构建原问题的最优解。我们称钢条切割问题满足<strong>最优子结构</strong>。
+除了上述的遍历方法，我们还可以找到另一种遍历方法：遍历切割的第一刀的位置，于是
+$$\begin{align}r_n = max {p_i + r_{n-i} : 1 \leq i \leq n } \end{align}$$</p>
+<h2 id="自顶向下递归实现"id="自顶向下递归实现"
+>自顶向下递归实现 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#自顶向下递归实现&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">CutRod</span><span style="color:#111">(</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">INT_MIN</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">max</span><span style="color:#111">(</span><span style="color:#111">q</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">CutRod</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">q</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>在这种方法里调用时会有很多重复的冗余计算，导致时间复杂度指数级增长$T (n) = n + \sum_{j = 0}^{n-1}T(j) \rightarrow T(n) = 2^n$</p>
+<p>我们可以将计算出的子问题结果保存下来，之后若需要子问题的答案只需要查找保存结果不必重新计算
+动态规划有两种等价的实现方法</p>
+<h2 id="带备忘的自顶向下法"id="带备忘的自顶向下法"
+>带备忘的自顶向下法 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#带备忘的自顶向下法&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>先检查是否计算过自问题的答案，如果计算过，直接返回保存的值;否则，用通常方法计算<code>q</code>并保存</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">MemoizedCutRod</span><span style="color:#111">(</span><span style="color:#00a8c8">const</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">r</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">]</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">q</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">INT_MIN</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">max</span><span style="color:#111">(</span><span style="color:#111">q</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">MemoizedCutRod</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">r</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">q</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">q</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="自底向上法"id="自底向上法"
+>自底向上法 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#自底向上法&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>依次求解$j = 0,1,&hellip;,n$的子问题，得到结果</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">BottomUpCutRod</span><span style="color:#111">(</span><span style="color:#00a8c8">const</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">r</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">INT_MIN</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">j</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">max</span><span style="color:#111">(</span><span style="color:#111">q</span><span style="color:#111">,</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">q</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>为了得到最优解的切割方式，我们可以在循环中记录下<code>i</code>的值，即每次切割的位置</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">ExtendedBottomUpCutRod</span><span style="color:#111">(</span><span style="color:#00a8c8">const</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>                           <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">r</span><span style="color:#111">,</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">s</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">j</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">int</span> <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">INT_MIN</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">j</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">q</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">q</span> <span style="color:#f92672">=</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">q</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">r</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">PrintCutRodSolution</span><span style="color:#111">(</span><span style="color:#00a8c8">const</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">r</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">s</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">ExtendedBottomUpCutRod</span><span style="color:#111">(</span><span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">n</span><span style="color:#111">,</span> <span style="color:#111">r</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34; &#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">n</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h1 id="最长相同子序列longest-common-subsequence"id="最长相同子序列longest-common-subsequence"
+>最长相同子序列(Longest common subsequence) 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#最长相同子序列longest-common-subsequence&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Given two sequences$X= &lt;x_1, x_2, &hellip;, x_m&gt;$and$Y=&lt;y_1, y_2, &hellip;, y_n&gt;$, how to find a maximum-lengthcommon subsequence of $X$ and $Y$ .
+(给定两个子序列 $X$ 和 $Y$ ,如何寻找 $X$ 和 $Y$ 的长度最大的相同子序列)</p>
+<h2 id="最优子结构"id="最优子结构"
+>最优子结构 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#最优子结构&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>Let $Z = &lt; z_1, &hellip;, z_{k-1} , z_k &gt;$ be any LCS of $X = &lt; x_1, &hellip;, x_{m-1} , x_m &gt;$ and $Y = &lt; y_1, &hellip;, y_{n-1} , y_n &gt;$ .</p>
+<ol>
+<li>If $x_m=y_n$, then $z_k=x_m=y_n$ and $Z_{k-1}$ is an LCS of $X_{m-1}$ and $Y_{n-1}$.</li>
+<li>If $x_m≠y_n$, then $z_k≠x_m$ ⇒ $Z$ is an LCS of $X_{m-1}$ and $Y$.</li>
+<li>If $x_m≠y_n$, then $z_k≠y_n$ ⇒ $Z$ is an LCS of $X$ and $Y_{n-1}$.</li>
+</ol>
+<p>$c[i,j]=\begin{cases}0,&amp;i=0;\text{或};j=0\[6pt]c[i-1,j-1]+1,&amp;i,j&gt;0;\text{且};x_i=y_j\[6pt]\max!\bigl(c[i-1,j],;c[i,j-1]\bigr),&amp;i,j&gt;0;\text{且};x_i\ne y_j\end{cases}$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#00a8c8">using</span> <span style="color:#00a8c8">namespace</span> <span style="color:#111">std</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* 回溯输出一条 LCS */</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">string</span> <span style="color:#75af00">buildLCS</span><span style="color:#111">(</span><span style="color:#00a8c8">const</span> <span style="color:#111">string</span> <span style="color:#f92672">&amp;</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#00a8c8">const</span> <span style="color:#111">string</span> <span style="color:#f92672">&amp;</span><span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#00a8c8">const</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">c</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">j</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">string</span> <span style="color:#111">ans</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">j</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">])</span> <span style="color:#111">{</span> <span style="color:#75715e">// 匹配字符
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#111">ans</span><span style="color:#111">.</span><span style="color:#111">push_back</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">--</span><span style="color:#111">i</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">--</span><span style="color:#111">j</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">&gt;=</span> <span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">])</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">--</span><span style="color:#111">i</span><span style="color:#111">;</span> <span style="color:#75715e">// 向上
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">--</span><span style="color:#111">j</span><span style="color:#111">;</span> <span style="color:#75715e">// 向左
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">reverse</span><span style="color:#111">(</span><span style="color:#111">ans</span><span style="color:#111">.</span><span style="color:#111">begin</span><span style="color:#111">(),</span> <span style="color:#111">ans</span><span style="color:#111">.</span><span style="color:#111">end</span><span style="color:#111">());</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">ans</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">ios</span><span style="color:#f92672">::</span><span style="color:#111">sync_with_stdio</span><span style="color:#111">(</span><span style="color:#111">false</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">cin</span><span style="color:#111">.</span><span style="color:#111">tie</span><span style="color:#111">(</span><span style="color:#00a8c8">nullptr</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">string</span> <span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">a</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">b</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">m</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">.</span><span style="color:#111">size</span><span style="color:#111">(),</span> <span style="color:#111">n</span> <span style="color:#f92672">=</span> <span style="color:#111">b</span><span style="color:#111">.</span><span style="color:#111">size</span><span style="color:#111">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">c</span><span style="color:#111">(</span><span style="color:#111">m</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 1. 填 DP 表 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">m</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">j</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">j</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">==</span> <span style="color:#111">b</span><span style="color:#111">[</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">])</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">else</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">max</span><span style="color:#111">(</span><span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">],</span> <span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 2. 输出长度 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">c</span><span style="color:#111">[</span><span style="color:#111">m</span><span style="color:#111">][</span><span style="color:#111">n</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#39;\n&#39;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 3. 输出一条具体 LCS */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">string</span> <span style="color:#111">lcs</span> <span style="color:#f92672">=</span> <span style="color:#111">buildLCS</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">b</span><span style="color:#111">,</span> <span style="color:#111">c</span><span style="color:#111">,</span> <span style="color:#111">m</span><span style="color:#111">,</span> <span style="color:#111">n</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">lcs</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#39;\n&#39;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h1 id="矩阵乘法-matrix-chain-multiplication-mcm"id="矩阵乘法-matrix-chain-multiplication-mcm"
+>矩阵乘法 Matrix-chain multiplication (MCM) 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#矩阵乘法-matrix-chain-multiplication-mcm&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>Given a sequence (chain)$&lt;A1, A2, &hellip;, An&gt;$of n matrices to be multiplied, and we wish to compute the product
+n 个矩阵相乘 ,称为‘矩阵连乘’(或矩阵链乘法),如何求积?
+The way we parenthesize a chain of matrices can have a dramatic impact
+on the cost of evaluating the product.
+可以肯定，这个问题的时间复杂度是$O(n^3)$，但是由于矩阵乘法的顺序不同，可能导致乘法运算次数差距很大，于是我们就有了矩阵链乘法问题
+We state the matrix-chain multiplication problem as follows: given a chain$&lt;A_1, A_2 , &hellip; ,A_n &gt;$ of n matrices, where for $i = 1, 2, &hellip; , n$, matrix $A_i$ has dimension$p_{i-1}\times  p_i$, fully parenthesize the product $A_1, A_2 , &hellip; ,A_n$ in a way that minimizes
+the number of scalar multiplications. The input is the sequence of dimensions
+$&lt;p_0, p_1, p_2 , &hellip; ,p_n &gt;$</p>
+<h2 id="最优子结构-1"id="最优子结构-1"
+>最优子结构 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#最优子结构-1&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>$Ai..j (i ≤ j )$ : 矩阵连乘 $A_i A_{i+1} &hellip;A_k A_{k+1}&hellip; A_j$</p>
+<ul>
+<li>非平凡情况下,全括号$A_iA_{i+1}&hellip;A_j$必定在位置 k 把问题分成两个部分,如下</li>
+<li>$A_{i..k}·A_{k+1..j}= A_{i..j}$全括号 $A_iA_{i+1}&hellip;A_j$ 的计算代价(标量乘法):$cost(A_{i..j})$</li>
+</ul>
+<p>$cost(A_{i..j}) = cost(A_{i..k}) + cost(A_{k+1..j}) +$the cost of multiplying$A_{i..k}·A_{k+1..j}$
+最优子结构:$A_{i..j}$ 的最优全括号$X$中的 $A_{i..k}$ 的全括号$M$必定是$A_{i..k}$ 的最优全括号
+需要考虑所有分割位置 k 以确保最优解是其中之一
+$m[i, j]$ : $A_{i..j}$的最优全括号的标量乘法次数
+$m[i, j] = m[i, k] + m[k+1, j] + p_{i-1}p_kp_j$
+于是:</p>
+<p>$m[i, j] = \begin{cases}0, &amp; \text{if } i = j \[6pt]\displaystyle \min_{i \leq k &lt; j} \left{ m[i, k] + m[k+1, j] + p_{i-1} p_k p_j \right}, &amp; \text{if } i &lt; j\end{cases}$</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;climits&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">using</span> <span style="color:#00a8c8">namespace</span> <span style="color:#111">std</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* 递归打印最优括号化 */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">void</span> <span style="color:#75af00">printOptimalParens</span><span style="color:#111">(</span><span style="color:#00a8c8">const</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">&amp;</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">j</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">i</span> <span style="color:#f92672">==</span> <span style="color:#111">j</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;A&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">i</span><span style="color:#111">;</span> <span style="color:#75715e">// 单个矩阵
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;(&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">printOptimalParens</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#111">i</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">printOptimalParens</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">j</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;)&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">ios</span><span style="color:#f92672">::</span><span style="color:#111">sync_with_stdio</span><span style="color:#111">(</span><span style="color:#111">false</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">cin</span><span style="color:#111">.</span><span style="color:#111">tie</span><span style="color:#111">(</span><span style="color:#00a8c8">nullptr</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#f92672">!</span><span style="color:#111">(</span><span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">n</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#75715e">// 矩阵个数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">p</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">cin</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">m</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">s</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* 按链长 l 从小到大 DP */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#111">;</span> <span style="color:#111">l</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">l</span><span style="color:#111">)</span> <span style="color:#111">{</span>             <span style="color:#75715e">// l=2..n
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">l</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">i</span><span style="color:#111">)</span> <span style="color:#111">{</span> <span style="color:#75715e">// 起点
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span> <span style="color:#f92672">+</span> <span style="color:#111">l</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>                 <span style="color:#75715e">// 终点
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#111">m</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">INT_MAX</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">k</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">;</span> <span style="color:#111">k</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">j</span><span style="color:#111">;</span> <span style="color:#f92672">++</span><span style="color:#111">k</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">int</span> <span style="color:#111">cost</span> <span style="color:#f92672">=</span> <span style="color:#111">m</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">k</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">m</span><span style="color:#111">[</span><span style="color:#111">k</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">*</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">k</span><span style="color:#111">]</span> <span style="color:#f92672">*</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">cost</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">m</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">m</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">cost</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">s</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">k</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">m</span><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">n</span><span style="color:#111">]</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span>     <span style="color:#75715e">// 最少乘法次数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">printOptimalParens</span><span style="color:#111">(</span><span style="color:#111">s</span><span style="color:#111">,</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">n</span><span style="color:#111">);</span> <span style="color:#75715e">// 最优括号化
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h1 id="最优二叉搜索树"id="最优二叉搜索树"
+>最优二叉搜索树 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#最优二叉搜索树&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><h2 id="最优子结构-2"id="最优子结构-2"
+>最优子结构 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/alg_dp/#最优子结构-2&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h2><p>设$T&rsquo;$为<code>OBST</code>$T$的一个子树,$T&rsquo;$包含<code>keys</code>$k_i, &hellip;, k_j$, 那么
+$T&rsquo;$ 是子问题[关于<code>keys</code> $k_i, &hellip;, k_j$ 和<code>dummy keys</code>$d_{i-1} , &hellip;, d_j$]的<code>OBST</code></p>
+<p>证明思想:剪切粘贴法
+设 <code>BST</code> $T$ 的搜索代价最小,$T&rsquo;$ 是$T$的搜索子树。如果$T$的一颗搜索子树$T&rsquo;&rsquo;$的搜索代价比$T&rsquo;$的搜索代价更小,在搜索树$T$中把$T&rsquo;$换成$T&rsquo;&rsquo;$ ,得到一颗新的搜索树$T&rsquo;&rsquo;&rsquo;$,其搜索代价比$T$更小,与假设矛盾。</p>
+<p>设$e[i, j]$: 一颗<code>OBST</code>的搜索代价,最优值
+可以得到
+$$\begin{align}e[i, i-1] = q_{i-1}\end{align}$$
+定义添加一个节点，期望搜索代价增加值为$w[i, j]$
+$$\begin{align}w[i, j]=\sum_{l = i}^{j}p_i+\sum_{l = i - 1}^{j}q_i\end{align}$$
+如果$k_r$是 <code>keys</code> $k_i , &hellip; , k_j$的一颗OBST 的树根,则
+$$\begin{align}
+e[i, j] &amp;= p_r+ ( e[i, r-1] + w[i, r-1] )+ ( e[r+1, j] + w[r+1, j] ) \
+&amp;= e[i, r-1] + e[r+1, j] + w[i, j]
+\end{align}$$
+通过两部分的递归公式可以得到递推式</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#00a8c8">struct</span> <span style="color:#75af00">OBSTResult</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">e</span><span style="color:#111">;</span>    <span style="color:#75715e">// e[i][j]: 包含key i到j的最优BST的期望搜索代价
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">w</span><span style="color:#111">;</span>    <span style="color:#75715e">// w[i][j]: key i到j的概率之和
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;&gt;</span> <span style="color:#111">root</span><span style="color:#111">;</span> <span style="color:#75715e">// root[i][j]: key i到j的最优根
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">OBSTResult</span> <span style="color:#75af00">OBST</span><span style="color:#111">(</span><span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">p</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span> <span style="color:#111">q</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">n</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// p: p[1..n] 是搜索key ki的概率
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// q: q[0..n] 是搜索失败的概率（哑键的概率）
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// n: 关键字的个数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">OBSTResult</span> <span style="color:#111">result</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">.</span><span style="color:#111">assign</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">w</span><span style="color:#111">.</span><span style="color:#111">assign</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">root</span><span style="color:#111">.</span><span style="color:#111">assign</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">vector</span><span style="color:#f92672">&lt;</span><span style="color:#00a8c8">int</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">0</span><span style="color:#111">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 初始化：长度为0的子树
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">q</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">w</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">q</span><span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// l: 子树中包含的关键字个数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">l</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">l</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span><span style="color:#111">;</span> <span style="color:#111">l</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 对于包含l个关键字的所有子树
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">n</span> <span style="color:#f92672">-</span> <span style="color:#111">l</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#00a8c8">int</span> <span style="color:#111">j</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span> <span style="color:#f92672">+</span> <span style="color:#111">l</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">INT_MAX</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">w</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">w</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">p</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">q</span><span style="color:#111">[</span><span style="color:#111">j</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 尝试ki, ki+1, ..., kj中的每一个作为根
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">r</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span><span style="color:#111">;</span> <span style="color:#111">r</span> <span style="color:#f92672">&lt;=</span> <span style="color:#111">j</span><span style="color:#111">;</span> <span style="color:#111">r</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">int</span> <span style="color:#111">t</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">r</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">[</span><span style="color:#111">r</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">+</span> <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">w</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">t</span> <span style="color:#f92672">&lt;</span> <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">])</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">e</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">t</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#111">result</span><span style="color:#111">.</span><span style="color:#111">root</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">][</span><span style="color:#111">j</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">r</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">return</span> <span style="color:#111">result</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div>
+        </div>
+
+        
+        <aside class="sidebar">
+            <h5>目录导航</h5>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#钢条切割">钢条切割</a>
+      <ul>
+        <li><a href="#自顶向下递归实现">自顶向下递归实现</a></li>
+        <li><a href="#带备忘的自顶向下法">带备忘的自顶向下法</a></li>
+        <li><a href="#自底向上法">自底向上法</a></li>
+      </ul>
+    </li>
+    <li><a href="#最长相同子序列longest-common-subsequence">最长相同子序列(Longest common subsequence)</a>
+      <ul>
+        <li><a href="#最优子结构">最优子结构</a></li>
+      </ul>
+    </li>
+    <li><a href="#矩阵乘法-matrix-chain-multiplication-mcm">矩阵乘法 Matrix-chain multiplication (MCM)</a>
+      <ul>
+        <li><a href="#最优子结构-1">最优子结构</a></li>
+      </ul>
+    </li>
+    <li><a href="#最优二叉搜索树">最优二叉搜索树</a>
+      <ul>
+        <li><a href="#最优子结构-2">最优子结构</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </aside>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Haoyuehx © 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://space.bilibili.com/3494363854276671" target="_blank"><i class="fa-brands fa-bilibili"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fa-brands fa-qq"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fa-brands fa-weixin"></i></a>
+            
+            <a class="footer-social px-2"  href="https://t.me/haoyuehx" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            
+            <a class="footer-social px-2"  href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            
+            <a class="footer-social px-2"  href="https://x.com/Haoyuehx" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            
+            <a class="footer-social px-2"  href="https://www.zhihu.com/people/4skcf3" target="_blank"><i class="fa-brands fa-zhihu"></i></a>
+            
+            <a class="footer-social px-2"  href="https://github.com/haoyuehx" target="_blank"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+</body>
+</html>
