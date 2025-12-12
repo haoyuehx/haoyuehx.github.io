@@ -27,7 +27,6 @@
     
     <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
@@ -38,14 +37,9 @@
     <title>My Digital Garden | 快速傅利叶变换</title>
     <meta name="description"
         content="">
-    <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self'; 
-    img-src 'self' https://ghchart.rshah.org https://lain.bgm.tv; 
-    
-    style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline'; 
-    
-    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
-">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https://ghchart.rshah.org https://lain.bgm.tv; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline' https://cdn.jsdmirror.com https://cdn.jsdelivr.net https://cdn.staticfile.org; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com https://cdn.jsdmirror.com https://cdn.staticfile.org https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://cdn.jsdmirror.com;">
 </head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="/">
@@ -126,7 +120,20 @@
     <div class="main-container">
         
         <div class="main-content">
-            <p>从多项式的乘法引入，
+            <h1 id="多项式乘法"id="多项式乘法"
+>多项式乘法 
+<button 
+    type="button" 
+    class="anchor" 
+    data-title="Copy link to clipboard" 
+    aria-label="Copy link to clipboard"
+    onclick="navigator.clipboard.writeText(&#34;/garden/fft/#多项式乘法&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
+        <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
+    </svg>
+</button>
+</h1><p>从多项式的乘法引入，
 $A(x)$, $B(x)$, degree-bound $n$  最高此项为$n$</p>
 <p>$C(x) = A(x) · B(x)$, degree-bound $2n − 1$<br>
 $= \sum_{j=0}^{2n-2}{c_jx^j}$</p>
@@ -138,47 +145,36 @@ $$ a \otimes b = (a_0, a_1, \cdots, a_{n-1}) \otimes (b_0, b_1, \cdots, b_{n-1})
 where, $$ c_j = a_0 b_j + a_1 b_{j-1} + \cdots + a_k b_{j-k} + \cdots + a_j b_0 $$</p>
 <p>可以看到这种算法的时间复杂度也是$O(n^2)$，那么有没有比$O(n^2)$更快的算法呢？我们就可以用Fast Fourier Transform (FFT, [快速傅里叶变换算法]),将时间复杂度降低到$O(nlogn)$</p>
 <p>为了理解FFT我们先从离散傅利叶变换DFT开始讲，还是回到刚才那个多项式乘法的例子。一个多项式，我们从函数的视角来看，提取每一个项的系数，我们可以将一个n次多项式写成一个n维向量。</p>
-<h1 id="endpmatrix"id="endpmatrix"
->换一种思路，我们是不是也可以用n个离散的点来代表一个函数。二次函数中我们如果知道三个点，可以通过解方程的方式将每一项的系数解出来，那是不是n次方程也可以用n个点来表示。
-$$
-\begin{pmatrix}
-y_0 \
-y_1 \
-\vdots \
-y_{n-1}
-\end{pmatrix} 
+<h1 id="点表示函数"id="点表示函数"
+>点表示函数 
 <button 
     type="button" 
     class="anchor" 
     data-title="Copy link to clipboard" 
     aria-label="Copy link to clipboard"
-    onclick="navigator.clipboard.writeText(&#34;/garden/fft/#endpmatrix&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+    onclick="navigator.clipboard.writeText(&#34;/garden/fft/#点表示函数&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
 >
     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
         <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
     </svg>
 </button>
-</h1><p>\begin{pmatrix}
-1 &amp; x_0 &amp; x_0^2 &amp; \cdots &amp; x_0^{n-1} \
-1 &amp; x_1 &amp; x_1^2 &amp; \cdots &amp; x_1^{n-1} \
-\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \
-1 &amp; x_{n-1} &amp; x_{n-1}^2 &amp; \cdots &amp; x_{n-1}^{n-1}
-\end{pmatrix}
-\begin{pmatrix}
-a_0 \
-a_1 \
-\vdots \
-a_{n-1}
-\end{pmatrix}
-= V(x_0, x_1, \cdots, x_{n-1}) \cdot a
-$$</p>
+</h1><p>换一种思路，我们是不是也可以用n个离散的点来代表一个函数。二次函数中我们如果知道三个点，可以通过解方程的方式将每一项的系数解出来，那是不是n次方程也可以用n个点来表示。</p>
+<div>
+$$
+\begin{aligned}
+\begin{pmatrix} y_0 \\ y_1 \\ \vdots \\ y_{n-1} \end{pmatrix} 
+&= \begin{pmatrix} 1 & x_0 & x_0^2 & \cdots & x_0^{n-1} \\ 1 & x_1 & x_1^2 & \cdots & x_1^{n-1} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & x_{n-1} & x_{n-1}^2 & \cdots & x_{n-1}^{n-1} \end{pmatrix} \begin{pmatrix} a_0 \\ a_1 \\ \vdots \\ a_{n-1} \end{pmatrix} \\ % <-- 换行
+&= V(x_0, x_1, \cdots, x_{n-1}) \cdot a
+\end{aligned}
+$$
+</div>
 <p>如果用点来表示的话，两个多项式相乘就可以用对应x处的值相乘得到2n+1个点解出原方程，我们就将之间复杂度降低到$O(n)$,极大的提高了计算效率!</p>
 <p>那么现在的问题就是，我们如何选取这2n+1个点然后再将其转换回多项式的系数呢？</p>
 <p>一种方法我们可以用Lagrange插值得到多项式
 $$A(x) = \sum_{k=0}^{n-1} y_k \frac{\prod_{j \neq k}(x - x_j)}{\prod_{j \neq k}(x_k - x_j)}$$
 之后去求每一项的系数，但是这种方法还是需要二重循环，时间复杂度是$O(n^2)$,用这种方式并未提高我们效率。</p>
 <p>于是现在我们的问题就是怎么找到一个更高效的算法来从点列表示法和多项式表示法之间互相转化。</p>
-<h1 id="endpmatrix-1"id="endpmatrix-1"
+<h1 id="endpmatrix"id="endpmatrix"
 >先从点的选取上来看，我们可以将我们的目光从实数转移到复数，选取$2n+1$个单位复根带入原方程就将函数写成如下形式
 $$
 \begin{pmatrix}
@@ -192,7 +188,7 @@ y_{n-1}
     class="anchor" 
     data-title="Copy link to clipboard" 
     aria-label="Copy link to clipboard"
-    onclick="navigator.clipboard.writeText(&#34;/garden/fft/#endpmatrix-1&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
+    onclick="navigator.clipboard.writeText(&#34;/garden/fft/#endpmatrix&#34;);this.insertAdjacentHTML('afterend', '<div class=link-copied>Link copied</div>');setTimeout(() => { document.querySelectorAll('.link-copied').forEach(el => el.remove()); }, 3000);"
 >
     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 96 960 960" width="1em">
         <path d="M450 776H280q-83 0-141.5-58.5T80 576q0-83 58.5-141.5T280 376h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140 634 180.833 675q40.834 41 99.167 41h170v60ZM325 606v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820 518 779.167 477 738.333 436 680 436H510v-60h170q83 0 141.5 58.5T880 576q0 83-58.5 141.5T680 776H510Z"/>
@@ -350,15 +346,9 @@ $$
             <h5>目录导航</h5>
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#endpmatrix">换一种思路，我们是不是也可以用n个离散的点来代表一个函数。二次函数中我们如果知道三个点，可以通过解方程的方式将每一项的系数解出来，那是不是n次方程也可以用n个点来表示。
-$$
-\begin{pmatrix}
-y_0 \
-y_1 \
-\vdots \
-y_{n-1}
-\end{pmatrix}</a></li>
-    <li><a href="#endpmatrix-1">先从点的选取上来看，我们可以将我们的目光从实数转移到复数，选取$2n+1$个单位复根带入原方程就将函数写成如下形式
+    <li><a href="#多项式乘法">多项式乘法</a></li>
+    <li><a href="#点表示函数">点表示函数</a></li>
+    <li><a href="#endpmatrix">先从点的选取上来看，我们可以将我们的目光从实数转移到复数，选取$2n+1$个单位复根带入原方程就将函数写成如下形式
 $$
 \begin{pmatrix}
 y_0 \
