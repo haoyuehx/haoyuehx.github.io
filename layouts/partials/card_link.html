@@ -1,0 +1,21 @@
+{{ $github := .github | default "" }}
+{{ $githubTrimmed := replaceRE "/+$" "" $github }}
+{{ $githubPath := replaceRE "^https?://github\\.com/" "" $githubTrimmed }}
+{{ $username := index (split $githubPath "/") 0 }}
+{{ $avatar := cond (ne $username "") (printf "https://avatars.githubusercontent.com/%s?v=4" $username) "/images/link.png" }}
+
+<article class="friend-card">
+  <a class="friend-card-link" href="{{ .site }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }} site"></a>
+  <div class="friend-avatar-wrap">
+    <img class="friend-avatar" src="{{ $avatar }}" alt="{{ .name }} avatar" loading="lazy">
+  </div>
+  <div class="friend-info">
+    <div class="friend-title-row">
+      <span class="friend-site">{{ .name }}</span>
+      <a class="friend-github" href="{{ .github }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }} GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <p class="friend-desc">{{ .desc }}</p>
+  </div>
+</article>
