@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<!-- Show the project title/summary just like a single project page -->
+<div class="container mt-6 items-start gap-x-10 md:flex">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">{{ .Title }}</h1>
+        </div>
+        {{ with .Summary }}
+        <p class="text-center fs-4 fst-italic serif">{{ . }}</p>
+        {{ end }}
+        <div class="text-center pt-4">
+            {{ with .Params.links }}
+            {{ range sort . "weight" }}
+            <a href="{{ .href }}" role="button" class="btn btn-sm btn-link mx-2" target="_blank">
+                <i class="{{ .icon }} fs-5"></i>
+                {{ .text }}
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<!-- List of files inside this project, rendering as cards like the main projects page -->
+{{ $files := .RegularPages.ByPublishDate.Reverse }}
+{{ if gt (len $files) 0 }}
+<div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-masonry='{"percentPosition": true }' id="project-files">
+        {{ range $files }}
+            {{ partial "card_project.html" . }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+{{ end }}

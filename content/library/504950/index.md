@@ -1,5 +1,5 @@
 ---
-author: 原创, 日常, A-1Pictures
+author: 原创, A-1Pictures, 日常
 date: '2025-07-22'
 ep_status: 6
 eps: 6
@@ -19,8 +19,8 @@ tags:
 - 泡面番
 - 日常
 - 原创
-- 日常
 - A-1Pictures
+- 日常
 - 泡面番
 - 2025年4月
 title: リコリス・リコイル Friends are thieves of time.
