@@ -401,7 +401,40 @@ echo "run log:   $LOG_DIR/run.log"
 | 中括号 `[ ]` | `if [ -f file.txt ]; then ...; fi` | 传统测试命令，`[` 与 `]` 两侧要留空格 |
 | 双中括号 `[[ ]]` | `if [[ "$s" == *.log ]]; then ...; fi` | Bash 扩展测试；支持模式匹配，变量通常无需额外转义 |
 
-### 10.3 Shell 实战版（含函数 + 条件 + 循环）
+### 10.3 怎么判断输入参数是不是空
+
+这里通常要分两种情况：
+- 没传参数：比如直接执行 `./build.sh`，此时 `$1` 不存在。
+- 传了空字符串：比如执行 `./build.sh ""`，此时 `$1` 存在，但内容为空。
+
+```bash
+# 判断“第一个参数是否为空或未传”
+if [[ -z "${1:-}" ]]; then
+  echo "first argument is empty"
+fi
+
+# 判断“是否根本没传任何参数”
+if [[ $# -eq 0 ]]; then
+  echo "no arguments provided"
+fi
+
+# 区分“没传”和“传了空字符串”
+if [[ $# -eq 0 ]]; then
+  echo "missing argument"
+elif [[ -z "$1" ]]; then
+  echo "argument is an empty string"
+else
+  echo "argument = $1"
+fi
+```
+
+- `-z`：判断字符串长度是否为 0。
+- `${1:-}`：当 `$1` 未设置时，给一个空字符串默认值；配合 `set -u` 更安全。
+- `$#`：当前传入参数个数。
+
+如果脚本开启了 `set -u`，不要直接写 `[[ -z "$1" ]]` 判断“可能不存在”的参数，更稳妥的写法是 `[[ -z "${1:-}" ]]`。
+
+### 10.4 Shell 实战版（含函数 + 条件 + 循环）
 ```bash
 #!/usr/bin/env bash
 set -euo pipefail
@@ -477,7 +510,7 @@ main() {
 main "$@"
 ```
 
-### 10.4 执行方式
+### 10.5 执行方式
 ```bash
 chmod +x build.sh
 ./build.sh           # debug
