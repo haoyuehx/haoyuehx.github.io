@@ -1,7 +1,7 @@
 ---
 title: Lab0 工具链实战：从命令行到可复用构建流
 date: 2026-03-11
-lastmod: 2026-03-11
+lastmod: 2026-03-14
 draft: false
 garden_tags: ["操作系统", "Linux", "工具链", "Shell", "Makefile"]
 summary: "lab0 工具链教程"
