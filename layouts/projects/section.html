@@ -9,6 +9,15 @@
         {{ with .Summary }}
         <p class="text-center fs-4 fst-italic serif">{{ . }}</p>
         {{ end }}
+        <figure class="github-activity mt-4 mb-2">
+            <figcaption class="text-center mb-3">GitHub Activities</figcaption>
+            <a href="https://github.com/haoyuehx" target="_blank" rel="noopener noreferrer"
+                aria-label="查看 Haoyuehx 的 GitHub 主页">
+                <img src="https://ghchart.rshah.org/659eb9/haoyuehx"
+                    alt="Haoyuehx 最近一年的 GitHub 提交活动图"
+                    class="img-fluid d-block mx-auto" width="1000" loading="lazy">
+            </a>
+        </figure>
         <div class="text-center pt-4">
             {{ with .Params.links }}
             {{ range sort . "weight" }}
