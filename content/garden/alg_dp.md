@@ -3,6 +3,7 @@ title: "动态规划"
 date: 2025-12-06
 lastmod: 2025-12-06
 draft: false
+math: true
 garden_tags: ["algorithm"]
 summary: " "
 status: "growing"

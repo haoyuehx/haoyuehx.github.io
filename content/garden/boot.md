@@ -1,7 +1,7 @@
 ---
 title: "启动流程：从 Reset Vector 到 Linux 内核"
 date: 2026-03-31
-lastmod: 2025-03-31
+lastmod: 2026-03-31
 garden_tags: ["操作系统","Boot","BIOS"]
 draft: false
 summary: "boot 启动流程源码笔记"

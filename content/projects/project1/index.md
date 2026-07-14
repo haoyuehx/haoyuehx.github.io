@@ -1,7 +1,7 @@
 ---
 title: "Markdown Syntax"
 date: 2021-08-01
-draft: false
+draft: true
 project_tags: ["markdown"]
 status: "evergreen"
 weight: 1

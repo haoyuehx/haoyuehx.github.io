@@ -43,7 +43,7 @@
             <p class="subheading">{{ .Summary }}</p>
             {{ end }}
             {{ end }}
-            <div class="row row-cols-1 row-cols-md-2 g-4 mb-5" data-masonry='{"percentPosition": true }'>
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
                 {{ range ( where site.RegularPages "Section" "projects" | first 6 ) }}
                 {{ partial "home_project.html" . }}
                 {{end}}
@@ -72,11 +72,8 @@
             </div>
             <div class="col me-auto">
                 <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
-                    {{ $data := resources.GetRemote
-                    "https://api.bgm.tv/v0/users/1024520/collections?subject_type=2&type=2&limit=30&offset=0" }}
-                    {{ with $data }}
-                    {{ $json := $data | transform.Unmarshal }}
-                    {{ $bangumiList := $json.data }}
+                    {{ $bangumiList := site.Data.bangumi | default (slice) }}
+                    {{ with $bangumiList }}
                     {{ range first 4 $bangumiList }}
                     <div class="col">
                         <div class="card top-highlight h-100" style="max-width: 240px; margin: 0 auto;">
@@ -93,7 +90,8 @@
                                     <span class="badge bg-primary py-1">⭐ {{ .subject.score }}</span>
                                     <span class="badge bg-secondary py-1">{{ .rate }}</span>
                                 </div>
-                                <a href="https://bgm.tv/subject/{{ .subject_id }}" class="stretched-link"></a>
+                                <a href="https://bgm.tv/subject/{{ .subject_id }}" class="stretched-link"
+                                    target="_blank" rel="noopener noreferrer" aria-label="在 Bangumi 查看 {{ .subject.name_cn }}"></a>
                             </div>
                         </div>
                     </div>

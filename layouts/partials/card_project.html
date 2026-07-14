@@ -12,13 +12,14 @@
         {{ end }}
         {{ end }}
         <div class="card-body">
-            {{ if .Summary }} 
+            {{ $summary := strings.TrimSpace .Summary }}
+            {{ if $summary }}
             <h4 class="card-title">{{ .Title }}</h4>
-            <p class="card-text pb-3">{{ .Summary }}.</p>
+            <p class="card-text pb-3">{{ $summary }}</p>
             {{ else }}
             <h4 class="card-title pb-3">{{ .Title }}</h4>
             {{ end }}
-            <a href="{{ .Permalink }}" class="stretched-link"></a>
+            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="查看项目：{{ .Title }}"></a>
         </div>
     </div>
 </div>

@@ -3,6 +3,7 @@ title: "字符串匹配"
 date: 2025-12-11
 lastmod: 2025-12-11
 draft: false
+math: true
 garden_tags: ["algorithm"]
 summary: " "
 status: "growing"
@@ -265,6 +266,5 @@ int main() {
     return 0;
 }
 ```
-
 
 

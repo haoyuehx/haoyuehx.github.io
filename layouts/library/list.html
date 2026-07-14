@@ -29,12 +29,9 @@
 
 <!-- 番剧卡片网格 -->
 <div class="container">
-    <div class="row" data-masonry='{"percentPosition": true }' id="blogposts">
-        {{ $data := resources.GetRemote
-        "https://api.bgm.tv/v0/users/1024520/collections?subject_type=2&type=2&limit=40&offset=0" }}
-        {{ with $data }}
-        {{ $json := . | transform.Unmarshal }}
-        {{ $bangumiList := $json.data | default (slice) }}
+    <div class="row" id="blogposts">
+        {{ $bangumiList := site.Data.bangumi | default (slice) }}
+        {{ with $bangumiList }}
         {{ range $bangumiList }}
         {{ $tags := delimit (apply .tags "printf" "js-iso-%s" ".") " " }}
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4 {{ $tags }}"> <!-- 更窄的列宽 -->
@@ -66,15 +63,16 @@
                         {{ .ep_status }}/{{ .subject.eps }}集
                     </p>
 
-                    <a href="https://bgm.tv/subject/{{ .subject_id }}" class="stretched-link"></a>
+                    <a href="https://bgm.tv/subject/{{ .subject_id }}" class="stretched-link"
+                        target="_blank" rel="noopener noreferrer" aria-label="在 Bangumi 查看 {{ .subject.name_cn }}"></a>
                 </div>
             </div>
         </div>
-        {{ end }}
         {{ else }}
         <div class="col-12">
             <p class="text-muted text-center">暂时无法加载动画数据</p>
         </div>
+        {{ end }}
         {{ end }}
     </div>
 </div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.LanguageCode | default "zh-CN" }}">
     {{- partial "head.html" . -}}
     <body>
+        <a class="skip-link" href="#content">跳到主要内容</a>
         {{- partial "header.html" . -}}
         <div id="content">
             {{- block "main" . }}{{- end }}

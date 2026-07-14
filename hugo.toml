@@ -1,13 +1,17 @@
-baseURL = ""
-languageCode = "en-us"
-title = "My Digital Garden"
+baseURL = "https://haoyuehx.github.io/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "Haoyuehx 的数字花园"
 copyright = "Haoyuehx ©"
+enableRobotsTXT = true
 
 
 [params]
   name = "HaoyuehxのBlog"
   description = "Programs are meant to be read by humans and only incidentally for computers to execute."
   initials = "Haoyue"
+  author = "Haoyuehx"
+  dateFormat = "2006-01-02"
   googleAnalytics = ""
 
 # config.toml 修改后

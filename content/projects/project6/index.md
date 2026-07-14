@@ -2,6 +2,7 @@
 title: "CSAPP lab"
 date: 2025-07-21
 draft: false
+math: true
 project_tags: ["csapp"]
 status: "seeding"
 summary: " "

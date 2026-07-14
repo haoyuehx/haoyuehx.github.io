@@ -9,8 +9,10 @@
         {{ end }}
         <div class="card-body">
             <h5 class="card-title">{{ .Title }}</h5>
-            <p class="card-text">{{ .Summary }}</p>
-            <a href="{{ .Permalink }}" class="stretched-link"></a>
+            {{ with strings.TrimSpace .Summary }}
+            <p class="card-text">{{ . }}</p>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="查看项目：{{ .Title }}"></a>
             <div class="row justify-content-between">
                 <div class="col align-self-start">
                 {{ with .Params.project_tags }}

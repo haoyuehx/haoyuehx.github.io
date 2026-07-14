@@ -5,7 +5,10 @@
         </div>
         <div class="col-sm-6 d-flex flex-row-reverse">
             {{ range .Site.Params.Social }}
-            <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
+            {{ if ne .link "#" }}
+            <a class="footer-social px-2" href="{{ .link }}" target="_blank" rel="noopener noreferrer"
+                aria-label="{{ .name }}" title="{{ .name }}"><i class="{{ .icon }}" aria-hidden="true"></i></a>
+            {{ end }}
             {{ end }}
         </div>
     </div>

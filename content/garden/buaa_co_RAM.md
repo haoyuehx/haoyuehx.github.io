@@ -3,6 +3,7 @@ title: "主存系统"
 date: 2025-12-13
 lastmod: 2025-12-13
 draft: false
+math: true
 garden_tags: ["Computer Organization"]
 summary: " "
 status: "growing"

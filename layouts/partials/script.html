@@ -1,7 +1,9 @@
 <script src="/js/bootstrap.min.js"></script>
+{{ if .IsSection }}
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script src="/js/isotope.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/isotope.js"></script>
+{{ end }}
 <script src="/js/dark.js"></script>
 <script>
 // set the default theme
@@ -11,11 +13,14 @@ var savedTheme = localStorage.getItem("dark-mode-storage") || "{{ .Site.Params.d
 setTheme(savedTheme);
 
 {{ else }}
-var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+var savedTheme = localStorage.getItem("dark-mode-storage") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
 setTheme(savedTheme);
 {{ end }}
 </script>
-<script src="/js/isotope.js"></script>
+{{ if .HasShortcode "mermaid" }}
 <script src="/js/mermaid.min.js"></script>
 <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
+{{ end }}
+{{ if .IsPage }}
 <script src="/js/markdown-callout.js"></script>
+{{ end }}

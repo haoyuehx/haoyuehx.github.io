@@ -11,7 +11,8 @@
         gtag('config', '{{ .Site.Params.googleAnalytics }}');
     </script>
     {{ end }}
-    {{/* KaTeX */}}
+    {{/* Only load KaTeX on pages that opt in with `math: true`. */}}
+    {{ if .Params.math }}
     <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.css" />
     <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdmirror.com/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
@@ -22,29 +23,33 @@
               ],
               throwOnError: false
             });"></script>
-    <!-- Enable Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap"
-        rel="stylesheet">
+    {{ end }}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <!-- CSS Styles (including Bootstrap 5 and FontAwesome 6) -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="/css/all.min.css"> -->
     <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
     <!-- Site Title -->
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
     <meta name="description"
-        content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ end }}{{ end }}">
+        content="{{ if and .IsPage (strings.TrimSpace .Summary) }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+    {{ with .OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
+    {{ end }}
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ if and .IsPage (strings.TrimSpace .Summary) }}{{ .Summary | plainify | htmlUnescape }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta name="twitter:card" content="summary">
 
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' https://ghchart.rshah.org https://lain.bgm.tv https://github.com https://avatars.githubusercontent.com https://raw.githubusercontent.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline' https://cdn.jsdmirror.com https://cdn.jsdelivr.net https://cdn.staticfile.org; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com https://cdn.jsdmirror.com https://cdn.staticfile.org https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://cdn.jsdmirror.com;">
+        content="default-src 'self'; img-src 'self' data: https://ghchart.rshah.org https://lain.bgm.tv https://github.com https://avatars.githubusercontent.com https://raw.githubusercontent.com; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline' https://cdn.jsdmirror.com https://cdn.staticfile.org; font-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdmirror.com https://cdn.staticfile.org; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdmirror.com; object-src 'none'; base-uri 'self'; form-action 'self';">
 </head>

@@ -5,7 +5,7 @@
         <div class="col-xs-12 col-sm-4">
             {{ $image := .Params.images.common }}
             <div class="text-center">
-                <img src="{{ $image }}" class="rounded card-img-top" style="max-width: 250px;">
+                <img src="{{ $image }}" alt="{{ .Params.name_cn | default .Title }}" class="rounded card-img-top" style="max-width: 250px;">
             </div>
         </div>
         <div class="col-sm-7">
@@ -37,7 +37,7 @@
 
             <div class="mt-4">
                 <a href="https://bgm.tv/subject/{{ .Params.subject_id }}" class="btn btn-outline-primary"
-                    target="_blank">
+                    target="_blank" rel="noopener noreferrer">
                     在Bangumi查看详情
                 </a>
             </div>
