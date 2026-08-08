@@ -34,4 +34,4 @@ title: うちの会社の小さい先輩の話
 ──それは、入社 3 年目の“小さくてかわいい”先輩・片瀬詩織里。
 後輩想いな詩織里は、何かと
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/405198)
+View more details on [Bangumi](https://bgm.tv/subject/405198)

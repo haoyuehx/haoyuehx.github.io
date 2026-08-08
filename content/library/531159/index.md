@@ -34,4 +34,4 @@ title: 日々は過ぎれど飯うまし
 五名刚刚成为大学生的女孩们共同演绎的日常故事。
 热爱美食，想和大家一起尽情玩耍，学习也要稍加努力，如此这般，尽情享受大学生活吧！
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/531159)
+View more details on [Bangumi](https://bgm.tv/subject/531159)

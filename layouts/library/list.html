@@ -17,7 +17,7 @@
         <i class="fas fa-filter"></i>
         <div id="filters" class="button-group">
             <input type="checkbox" class="btn-check" id="js-iso-all" autocomplete="off" data-filter="*" checked>
-            <label class="button" for="js-iso-all">全部</label>
+            <label class="button" for="js-iso-all">All</label>
             {{ range .Site.Taxonomies.library_tags }}
             {{ $btnid := .Page.Title | printf "js-iso-%s"}}
             <input type="checkbox" class="btn-check" id="{{ $btnid }}" autocomplete="off" data-filter=".{{ $btnid }}">
@@ -50,7 +50,7 @@
                     <!-- 紧凑的评分显示 -->
                     <div class="d-flex justify-content-between mb-1" style="font-size: 0.7rem;">
                         <span class="badge bg-primary py-1">⭐ {{ .subject.score }}</span>
-                        <span class="badge bg-secondary py-1">我的 {{ .rate }}</span>
+                        <span class="badge bg-secondary py-1">Mine {{ .rate }}</span>
                     </div>
 
                     <!-- 进度条 -->
@@ -60,17 +60,17 @@
                     </div>
 
                     <p class="text-end mb-0" style="font-size: 0.65rem;">
-                        {{ .ep_status }}/{{ .subject.eps }}集
+                        {{ .ep_status }}/{{ .subject.eps }} eps
                     </p>
 
                     <a href="https://bgm.tv/subject/{{ .subject_id }}" class="stretched-link"
-                        target="_blank" rel="noopener noreferrer" aria-label="在 Bangumi 查看 {{ .subject.name_cn }}"></a>
+                        target="_blank" rel="noopener noreferrer" aria-label="View {{ .subject.name_cn }} on Bangumi"></a>
                 </div>
             </div>
         </div>
         {{ else }}
         <div class="col-12">
-            <p class="text-muted text-center">暂时无法加载动画数据</p>
+            <p class="text-muted text-center">Animation data is temporarily unavailable.</p>
         </div>
         {{ end }}
         {{ end }}

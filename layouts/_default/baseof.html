@@ -2,7 +2,7 @@
 <html lang="{{ .Site.Language.LanguageCode | default "zh-CN" }}">
     {{- partial "head.html" . -}}
     <body>
-        <a class="skip-link" href="#content">跳到主要内容</a>
+        <a class="skip-link" href="#content">Skip to main content</a>
         {{- partial "header.html" . -}}
         <div id="content">
             {{- block "main" . }}{{- end }}

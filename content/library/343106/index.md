@@ -33,4 +33,4 @@ title: 継母の連れ子が元カノだった
 而高中入学前的两个人——伊理户水斗和绫井结女以意想不到的形式重逢。
 “当然是我当哥哥了。”“我才是姐姐，这还用说吗？”
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/343106)
+View more details on [Bangumi](https://bgm.tv/subject/343106)

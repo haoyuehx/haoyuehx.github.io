@@ -35,4 +35,4 @@ title: デート・ア・バレット デッド・オア・バレット
 
 第３の
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/291171)
+View more details on [Bangumi](https://bgm.tv/subject/291171)

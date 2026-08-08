@@ -32,4 +32,4 @@ title: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
 无论任何人都认为十分般配的这两位天才，本以为很快就会喜结良缘，但碍于过高的自尊心而仍然未能告白！
 “如何让对方告白”在这样的恋爱头脑战中穷尽智略的
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/293049)
+View more details on [Bangumi](https://bgm.tv/subject/293049)

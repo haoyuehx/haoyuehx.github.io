@@ -29,4 +29,4 @@ title: ブルーアーカイブ The Animation
 “因为这里，是我们的归宿。”
 通过数以千计的学校形成的巨大学园都市“基沃托斯”。在这里，拿着枪的学生们的拌嘴，成了日常的风景。其中，被沙漠环绕的“阿拜多斯高中”面临停办的危机。为了摆脱这一状况而奋斗的“对策委员会”5名学生，遇见了被称作“
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/416777)
+View more details on [Bangumi](https://bgm.tv/subject/416777)

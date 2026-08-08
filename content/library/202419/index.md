@@ -33,4 +33,4 @@ title: Re:CREATORS
 
 —
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/202419)
+View more details on [Bangumi](https://bgm.tv/subject/202419)

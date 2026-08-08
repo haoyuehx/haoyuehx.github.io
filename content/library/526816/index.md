@@ -34,4 +34,4 @@ title: 機動戦士Gundam GQuuuuuuX
 
 同时，被宇宙军和警察两方追捕的神
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/526816)
+View more details on [Bangumi](https://bgm.tv/subject/526816)

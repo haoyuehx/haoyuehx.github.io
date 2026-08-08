@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="{{ "/" | relURL }}" aria-label="返回首页">
+        <a class="navbar-brand" href="{{ "/" | relURL }}" aria-label="Back to home">
             {{ if .Site.Params.Initials }}
             <b style="font-weight: 800;">{{ .Site.Params.Initials }}</b>
             {{ else }}
@@ -21,7 +21,7 @@
                 {{ end }}
                 <li class="nav-item px-2 pt-1">
                     <button class="theme-toggle btn fa-solid fa-moon" id="dark-mode-toggle" type="button"
-                        aria-label="切换深色模式" title="切换深色模式"></button>
+                        aria-label="Switch to dark mode" title="Switch to dark mode"></button>
                 </li>
             </ul>
         </div>

@@ -33,4 +33,4 @@ title: ウマ娘 シンデレラグレイ
 这名终将被称为“怪物”的灰色少女，此刻开始书写全新的传说……
 驰骋青春的灰姑娘故事，终于开跑！！
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/509297)
+View more details on [Bangumi](https://bgm.tv/subject/509297)

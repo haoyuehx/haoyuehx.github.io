@@ -29,4 +29,4 @@ title: アホガール
 
 空前绝后的笨蛋，就在这里！ 笨到无可救药的女高中生·花畑佳子。 非常喜欢香蕉。 非常喜欢青梅竹马的阿君。 以上！
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/208450)
+View more details on [Bangumi](https://bgm.tv/subject/208450)

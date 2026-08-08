@@ -32,4 +32,4 @@ title: 虚構推理
 这样毫不普通的两人，迎战“怪异”们引发的神秘事件的［恋爱×传奇×推理］！！
 两人所面临的诡异事
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/271687)
+View more details on [Bangumi](https://bgm.tv/subject/271687)

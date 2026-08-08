@@ -34,4 +34,4 @@ title: マッシュル-MASHLE- 神覚者候補選抜試験編
 
 家族との平穏な暮らしを望む彼だったが、ある
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/443493)
+View more details on [Bangumi](https://bgm.tv/subject/443493)

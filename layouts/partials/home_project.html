@@ -12,7 +12,7 @@
             {{ with strings.TrimSpace .Summary }}
             <p class="card-text">{{ . }}</p>
             {{ end }}
-            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="查看项目：{{ .Title }}"></a>
+            <a href="{{ .RelPermalink }}" class="stretched-link" aria-label="View project: {{ .Title }}"></a>
             <div class="row justify-content-between">
                 <div class="col align-self-start">
                 {{ with .Params.project_tags }}

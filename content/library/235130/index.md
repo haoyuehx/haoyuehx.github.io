@@ -35,4 +35,4 @@ title: ぐらんぶる
 这样的伊织所面临的却是——除了野球拳以外的猜拳一概不知的强壮男人们！！
 
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/235130)
+View more details on [Bangumi](https://bgm.tv/subject/235130)

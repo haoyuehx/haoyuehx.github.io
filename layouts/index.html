@@ -91,13 +91,13 @@
                                     <span class="badge bg-secondary py-1">{{ .rate }}</span>
                                 </div>
                                 <a href="https://bgm.tv/subject/{{ .subject_id }}" class="stretched-link"
-                                    target="_blank" rel="noopener noreferrer" aria-label="在 Bangumi 查看 {{ .subject.name_cn }}"></a>
+                                    target="_blank" rel="noopener noreferrer" aria-label="View {{ .subject.name_cn }} on Bangumi"></a>
                             </div>
                         </div>
                     </div>
                     {{ else }}
                     <div class="col-12">
-                        <p class="text-muted">暂时无法加载动画数据</p>
+                        <p class="text-muted">Animation data is temporarily unavailable.</p>
                     </div>
                     {{ end }}
                     {{ end }}

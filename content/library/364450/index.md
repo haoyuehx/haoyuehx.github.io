@@ -30,4 +30,4 @@ title: リコリス・リコイル
 
 平稳的日子――其实暗藏着秘密防范犯罪的秘密组织――“DA（Direct Attack）”。作为特工的少女们“LYCORIS”。有着历代最强的LYCORIS之称的・锦木千束、优秀的LYCORIS・井之上泷奈，在咖啡厅“LycoReco”支部工
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/364450)
+View more details on [Bangumi](https://bgm.tv/subject/364450)

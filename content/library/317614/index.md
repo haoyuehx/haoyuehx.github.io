@@ -31,4 +31,4 @@ title: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～ OVA
 
 「かぐや様ダークネスvolume1」プール終わりのシャワー室。水着姿のかぐや・藤原の身に次々と巻き起こるあんなことやこんなこと…！？秀知院学園、とある夏の日
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/317614)
+View more details on [Bangumi](https://bgm.tv/subject/317614)

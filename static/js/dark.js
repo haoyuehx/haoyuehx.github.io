@@ -15,13 +15,13 @@ function setTheme(mode) {
         darkTheme.disabled = false;
         toggle.classList.remove("fa-moon");
         toggle.classList.add("fa-sun");
-        toggle.setAttribute("aria-label", "切换浅色模式");
-        toggle.setAttribute("title", "切换浅色模式");
+        toggle.setAttribute("aria-label", "Switch to light mode");
+        toggle.setAttribute("title", "Switch to light mode");
     } else if (mode === "light") {
         darkTheme.disabled = true;
         toggle.classList.remove("fa-sun");
         toggle.classList.add("fa-moon");
-        toggle.setAttribute("aria-label", "切换深色模式");
-        toggle.setAttribute("title", "切换深色模式");
+        toggle.setAttribute("aria-label", "Switch to dark mode");
+        toggle.setAttribute("title", "Switch to dark mode");
     }
 }

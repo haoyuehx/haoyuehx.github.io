@@ -25,9 +25,9 @@
             <p class="card-date m-0">
                 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
                 {{ with .Date }}
-                发布于 {{ .Format $dateFormat }} ·
+                Published {{ .Format $dateFormat }} ·
                 {{ end }}
-                更新于 {{ .Lastmod.Format $dateFormat }}
+                Updated {{ .Lastmod.Format $dateFormat }}
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -63,7 +63,7 @@
 
         <!-- 文件导航：列出当前项目目录下的所有 markdown 文件 -->
         <aside class="sidebar">
-            <h5>项目文件</h5>
+            <h5>Project files</h5>
             <ul class="nav flex-column">
                 {{ $dir := .File.Dir }}
                 {{ $siblings := where .Site.RegularPages "File.Dir" $dir }}

@@ -32,4 +32,4 @@ title: かぐや様は告らせたい-ウルトラロマンティック-
 原以为这两个任谁都觉得很登对的天才应该很快就会在一起，但这两人却因为过高的自尊心导致他们终没能向对方告白。
 “该用什么办法才能让对方向自己告
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/317613)
+View more details on [Bangumi](https://bgm.tv/subject/317613)

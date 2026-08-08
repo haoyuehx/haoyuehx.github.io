@@ -35,4 +35,4 @@ A.S. 122年――
 
 自奎达工厂发生的事
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/403238)
+View more details on [Bangumi](https://bgm.tv/subject/403238)

@@ -17,9 +17,9 @@
             </figcaption>
             </p>
             <div class="d-flex gap-3 mb-3">
-                <span class="badge bg-primary">评分: {{ .Params.score }}</span>
-                <span class="badge bg-secondary">我的评分: {{ .Params.rate }}</span>
-                <span class="badge bg-info">进度: {{ .Params.ep_status }}/{{ .Params.eps }}</span>
+                <span class="badge bg-primary">Score: {{ .Params.score }}</span>
+                <span class="badge bg-secondary">My rating: {{ .Params.rate }}</span>
+                <span class="badge bg-info">Progress: {{ .Params.ep_status }}/{{ .Params.eps }}</span>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
         <div class="serif main-content p-5">
             {{ .Content }}
 
-            <h4>标签</h4>
+            <h4>Tags</h4>
             <div class="tag-cloud">
                 {{ range .Params.tags }}
                 <span class="badge bg-light text-dark">{{ . }}</span>
@@ -38,7 +38,7 @@
             <div class="mt-4">
                 <a href="https://bgm.tv/subject/{{ .Params.subject_id }}" class="btn btn-outline-primary"
                     target="_blank" rel="noopener noreferrer">
-                    在Bangumi查看详情
+                    View on Bangumi
                 </a>
             </div>
         </div>

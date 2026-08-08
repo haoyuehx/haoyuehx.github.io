@@ -25,9 +25,9 @@
             <p class="card-date m-0">
                 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
                 {{ with .Date }}
-                发布于 {{ .Format $dateFormat }} ·
+                Published {{ .Format $dateFormat }} ·
                 {{ end }}
-                更新于 {{ .Lastmod.Format $dateFormat }}
+                Updated {{ .Lastmod.Format $dateFormat }}
             </p>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
@@ -62,7 +62,7 @@
 
         <!-- 目录导航 -->
         <aside class="sidebar">
-            <h5>目录导航</h5>
+            <h5>On this page</h5>
             {{ .TableOfContents }}
         </aside>
     </div>

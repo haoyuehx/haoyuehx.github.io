@@ -32,4 +32,4 @@ title: 虚構推理 Season2
 少女岩永琴子作为鬼怪们的“智慧之神”，今天也有鬼怪找她排忧解难。琴子身边有一名连鬼怪都畏惧不已的男子，那就是她一见钟情的恋人，名叫樱川九郎。
 本片讲述这两个不普通的人齐心协力，使用【虚构
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/320839)
+View more details on [Bangumi](https://bgm.tv/subject/320839)

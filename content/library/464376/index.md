@@ -36,4 +36,4 @@ title: 負けヒロインが多すぎる！
 被有点缺憾的败犬女主——败女们环绕，新感觉、乱糟糟的败走系青春故事就此揭幕。
 因失败
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/464376)
+View more details on [Bangumi](https://bgm.tv/subject/464376)

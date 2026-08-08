@@ -1,5 +1,5 @@
 ---
-title: "关于我"
+title: "About"
 date: 2005-01-07
 summary: "Software engineering student and lifelong learner"
 layout: about

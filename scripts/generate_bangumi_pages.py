@@ -47,6 +47,6 @@ for item in bangumi_data:
         f.write('---\n\n')
         f.write(f"![{subject['name_cn']}]({subject['images']['common']})\n\n")
         f.write(subject['short_summary'] + '\n\n')
-        f.write(f"更多信息请访问 [Bangumi页面](https://bgm.tv/subject/{subject_id})")
+        f.write(f"View more details on [Bangumi](https://bgm.tv/subject/{subject_id})")
 
 print(f"已生成 {len(bangumi_data)} 个番剧页面")

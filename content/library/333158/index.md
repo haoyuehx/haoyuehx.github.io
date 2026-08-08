@@ -31,4 +31,4 @@ title: その着せ替え人形は恋をする
 对这样的新菜来说，总是身处班上团体的中心，大受欢迎的喜多川海梦就像是不同世界的人一样。
 但就在某天，
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/333158)
+View more details on [Bangumi](https://bgm.tv/subject/333158)

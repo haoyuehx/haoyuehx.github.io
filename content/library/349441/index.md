@@ -36,4 +36,4 @@ title: 機動戦士ガンダム 水星の魔女
 她名为苏莱塔·墨丘利。
 内心纯真的少女随着胸口鲜红的
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/349441)
+View more details on [Bangumi](https://bgm.tv/subject/349441)

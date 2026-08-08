@@ -1,13 +1,13 @@
 baseURL = "https://haoyuehx.github.io/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "Haoyuehx 的数字花园"
+title = "Haoyuehx's Digital Garden"
 copyright = "Haoyuehx ©"
 enableRobotsTXT = true
 
 
 [params]
-  name = "HaoyuehxのBlog"
+  name = "Haoyuehx's Blog"
   description = "Programs are meant to be read by humans and only incidentally for computers to execute."
   initials = "Haoyue"
   author = "Haoyuehx"

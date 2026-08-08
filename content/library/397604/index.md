@@ -28,4 +28,4 @@ title: ATRI -My Dear Moments-
 
 「在逐渐沉没的世界，我找到了你。」在近未来，不明原因的海平面上升导致大面积地表被海水淹没。幼时因意外事故失去了一条腿的少年斑鸠夏生厌倦了城市生活，迁居到了海边的乡村小镇。他无亲无故，留给他的只有曾属于海洋地质学家的祖母的船和潜水艇，以及债款
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/397604)
+View more details on [Bangumi](https://bgm.tv/subject/397604)

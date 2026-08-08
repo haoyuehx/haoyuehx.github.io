@@ -33,4 +33,4 @@ title: ヨスガノソラ
 兄妹俩幼时暑假期间曾来过多次奥木染，这里有着祖父的家，是个令人怀念的地方。
 因为意外事故而失去了双亲与去处的兄妹，决定移居至现在没有人居住的祖父家，在此开始新的生活。
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/7157)
+View more details on [Bangumi](https://bgm.tv/subject/7157)

@@ -30,4 +30,4 @@ title: 'Cyberpunk: Edgerunners'
 
 《赛博朋克：浪客》是与《赛博朋克2077》共享同一世界观的原创动画项目，为一部十集的独立故事剧集，讲述了一名街头小子尝试在技术高度繁荣、人体改造盛行的未来城市中挣扎求生的故事。冒着失去一切的风险，他选择成为一名浪客 —— 游走于法外的雇佣兵
 
-更多信息请访问 [Bangumi页面](https://bgm.tv/subject/309311)
+View more details on [Bangumi](https://bgm.tv/subject/309311)
