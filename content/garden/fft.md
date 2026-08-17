@@ -120,9 +120,9 @@ y_{k+n/2} &= A(\omega_n^{n/2+k}) = A^{[0]}(\omega_{n/2}^{n/2+k}) + (\omega_n^{n/
 \end{align*}
 $$
 我们只需要分别计算$y_k^{[0]}$和$y_k^{[1]}$就可以得到最终结果，于是继续递归
-![](../../static/images/fft.png)
+![](/images/fft.png)
 可以看见我们在计算$y_k^{[0]}$和$y_k^{[1]}$都用了$(\omega_n^k) \cdot y_k^{[1]}$,于是可以使用butterfly operation(蝶型操作),减少一次乘法的计算
-![](../../static/images/butterfly.png)
+![](/images/butterfly.png)
 ```C++
 // 递归FFT算法
 vector<Complex> RECURSIVE_FFT(vector<Complex> a, int inv = 1) {
@@ -183,7 +183,7 @@ vector<Complex> RECURSIVE_FFT(vector<Complex> a, int inv = 1) {
 跟源数据个数相等)
 - 第三层循环,蝶算:蝶形操作(每组有 m 个数,有 m/2 个蝶形操作,一共 n/m组数,所有蝶形操作
 (m/2)*(n/m) = n/2 个 )
-![](../../static/images/fft_b.png)
+![](/images/fft_b.png)
 ```C++
 void FFT(Complex a[], int n, int inv) {
     // 位逆序置换

@@ -442,6 +442,13 @@ a:hover {
   font-size: 1em;
 }
 
+.main-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto;
+}
+
 .main-content .md-callout {
   margin: 1.15rem 0;
   padding: 0.78rem 1rem 0.82rem;

@@ -21,7 +21,7 @@ status: "growing"
 3. **$|x|$**：字符串$x$的长度。
 4. **字符串连接**：两个字符串$x$和$y$的连接，记作$xy$，其长度为$|x| + |y|$。
 5. **$\omega ⊏ x$**：字符串$\omega$是$x$的前缀，如果存在某个$y$属于 $\Sigma ^{*}$，使得$x = \omega y$。
-  ![前缀](../../static/images/prefix.png)
+  ![前缀](/images/prefix.png)
 
 6. **$\omega ⊐ x$**：$\omega$ 是$x$的后缀，如果存在某个$y$属于$\Sigma ^{*}$，使得 $x = y \omega$。
 
@@ -31,7 +31,7 @@ status: "growing"
   - 对于任何字符串 $x$ 和 $y$ 以及任意字符 $a$，我们有 $x ⊐ y$ 当且仅当 $xa ⊐ ya$。
   - $⊏ $和$ ⊐ $是传递关系。
 
-  ![后缀](../../static/images/suffix.png)
+  ![后缀](/images/suffix.png)
 
 ## 朴素字符串匹配算法
 很容易想到的一种方法就是在文本中滑动模板，滑动过程中比较是否匹配，时间复杂度$O(mn)$
@@ -45,7 +45,7 @@ NAIVE-STRING-MATCHER(T, P, n, m)
 ## Rabin-Karp 算法
 
 我们可以将每一个字符进行编码，之后按位求和，得到每一个字符串的一个值，利用Hash和尖端数论的方法，我们可以知道每个字符串只对应一个数字。之后只需要找到字符串里数字相等的字符串即可。这种方式的预处理时间复杂度为$O(m)$运行时间复杂度为$O(mn)$
-![](../../static/images/RK.png)
+![](/images/RK.png)
 
 虽然他的时间复杂度仍然是$O(mn)$，我们可以借鉴这种对字符串的预处理方法，于是我们就有两种方法：有限状态机和KMP算法
 
@@ -67,7 +67,7 @@ NAIVE-STRING-MATCHER(T, P, n, m)
 有限自动机通过读取输入符号序列，并根据转移函数在状态之间移动，来决定输入序列是否被接受。如果最终状态是接受状态，则输入被接受；否则，被拒绝。
 
 以模板字符串`ababaca`为例，他的状态转移图如下
-![](../../static/images/FA.png)
+![](/images/FA.png)
 对于需要匹配的字符串，我们只需要从$1$到$n$进行遍历，对于输入字符串进行状态转移，当到达状态$7$时即可认为匹配成功
 ```plaintext
 FINITE-AUTOMATON-MATCHER(T, δ, n, m)
@@ -266,5 +266,4 @@ int main() {
     return 0;
 }
 ```
-
 

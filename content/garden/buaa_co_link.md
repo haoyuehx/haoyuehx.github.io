@@ -101,7 +101,7 @@ Symbol table '.symtab' contains 11 entries:
 现在`main`、`buf`、`swap`三个符号都有，并且不再是`UND`
 那么链接是怎么把两个二进制文件组合到一起呢
 就是对应字段的组合
-![链接](../../static/images/link.png)
+![链接](/images/link.png)
 ```shell
 $ objdump -h main.o
 
@@ -188,7 +188,7 @@ $ file /lib32/libmemusage.so
 /lib32/libmemusage.so: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=2bc3203b302795968748f6e787828793b05f6b8b, for GNU/Linux 3.2.0, stripped
 ```
 
-![sections](../../static/images/elf.png)
+![sections](/images/elf.png)
 |常用段名|说明|
 |-|-|
 |.text|编译后的机器码|
