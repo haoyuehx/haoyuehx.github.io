@@ -339,6 +339,7 @@ a:hover {
   color: var(--dark);
   padding-top: 10px;
   padding-bottom: 10px;
+  scroll-margin-top: 5rem;
 }
 .highlight {
   line-height: normal;
@@ -504,10 +505,73 @@ a:hover {
 .sidebar {
     width: 20%;
     position: sticky;
-    top: 1.5rem;
+    top: 5rem;
+    max-height: calc(100vh - 7rem);
     overflow-y: auto;
     background-color: var(--white);
     align-self: flex-start;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(69, 73, 99, 0.24) transparent;
+}
+
+.sidebar-title {
+    margin: 0 0 0.9rem 1.3rem;
+    color: var(--dark);
+    font-family: var(--headings);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.sidebar #TableOfContents a {
+    position: relative;
+    display: block;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.65rem 0.3rem 0.8rem;
+    color: rgba(35, 48, 68, 0.72);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    border-radius: 0.75rem;
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.sidebar #TableOfContents a:hover {
+    color: var(--dark);
+    background: rgba(10, 148, 200, 0.07);
+}
+
+.sidebar #TableOfContents a.toc-active {
+    color: var(--blue);
+    background: rgba(10, 148, 200, 0.1);
+    font-weight: 600;
+}
+
+.sidebar .toc-progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(69, 73, 99, 0.16);
+}
+
+.sidebar .toc-progress::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--blue);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 180ms ease;
+}
+
+.sidebar li.toc-read > a > .toc-progress::after,
+.sidebar li.toc-current > a > .toc-progress::after {
+    transform: scaleY(1);
 }
 
 @media (max-width: 991.98px) {
@@ -530,11 +594,16 @@ a:hover {
   .sidebar {
     position: static;
     order: -1;
-    max-height: 18rem;
+    max-height: none;
+    overflow-y: visible;
     margin: 0 0 2rem;
     padding: 1rem;
     border: 1px solid #e7ecf3;
     border-radius: 10px;
+  }
+
+  .sidebar-title {
+    margin-left: 1.3rem;
   }
 
   .main-content pre,
@@ -581,23 +650,24 @@ a:hover {
 }
 
 .sidebar li {
+    position: relative;
     padding: 0;
     margin: 0;
 }
 
-/* 不同层级的标题增加 2ch 缩进 */
+/* 所有标题层级保持同一条左侧基线 */
 .sidebar ul ul {
     padding-left: 0ch;
 }
 
 /* 二级 */
 .sidebar ul ul ul {
-    padding-left: 1ch;
+    padding-left: 0ch;
 }
 
 /* 三级 */
 .sidebar ul ul ul ul {
-    padding-left: 1ch;
+    padding-left: 0ch;
 }
 
 /* 四级 */
