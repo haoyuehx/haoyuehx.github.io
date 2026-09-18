@@ -1,6 +1,7 @@
 {{ .Scratch.Set "project_tags_list" ""}}
 {{ range .Params.project_tags }}
-    {{ $.Scratch.Add "project_tags_list" ( . | printf " js-iso-%s") }}
+    {{ $slug := . | urlize }}
+    {{ $.Scratch.Add "project_tags_list" (printf " js-iso-%s" $slug) }}
 {{ end }}
 <div class='col {{ $.Scratch.Get "project_tags_list" }}'>
     <div class="card top-highlight">

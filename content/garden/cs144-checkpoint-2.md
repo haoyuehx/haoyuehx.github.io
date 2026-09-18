@@ -3,6 +3,8 @@ title: "CS144 Checkpoint 2：从回绕序列号到 TCP 接收方"
 date: 2026-08-16
 lastmod: 2026-08-16
 garden_tags: ["Computer Network", "CS144", "C++", "TCP"]
+project: "cs144"
+project_tags: ["CS144", "Computer Network"]
 draft: false
 summary: "记录 CS144 Checkpoint 2 的实现过程：32 位 TCP 序列号的 wrap/unwrap、checkpoint 的作用、SYN/FIN 占用序列号，以及 TCPReceiver 的接收、确认与流量控制。"
 status: "seeding"

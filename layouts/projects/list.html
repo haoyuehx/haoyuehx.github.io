@@ -27,7 +27,8 @@
         <i class="fas fa-filter"></i>
         <div id="filters" class="button-group">
             {{ range $name, $taxonomy := .Site.Taxonomies.project_tags }}
-            {{ $btnid := $name | printf ".js-iso-%s"}}
+            {{ $slug := $name | urlize }}
+            {{ $btnid := printf ".js-iso-%s" $slug }}
             <input type="checkbox" class="btn-check" id="{{ $btnid }}" autocomplete="off" data-filter="{{ $btnid }}">
             <label class="button" for="{{ $btnid }}">{{ $name }}</label>  
             {{ end }}

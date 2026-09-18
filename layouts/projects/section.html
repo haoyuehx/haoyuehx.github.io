@@ -1,5 +1,11 @@
 {{ define "main" }}
 
+{{ $files := .Pages.ByPublishDate.Reverse }}
+{{ $projectKey := .Params.project_key }}
+{{ with $projectKey }}
+    {{ $files = (where site.RegularPages "Params.project" "eq" .).ByPublishDate.Reverse }}
+{{ end }}
+
 <!-- Show the project title/summary just like a single project page -->
 <div class="container mt-6 items-start gap-x-10 md:flex">
     <div class="py-4 rounded-3">
@@ -9,6 +15,7 @@
         {{ with .Summary }}
         <p class="text-center fs-4 fst-italic serif">{{ . }}</p>
         {{ end }}
+        {{ if not $projectKey }}
         <figure class="github-activity mt-4 mb-2">
             <figcaption class="text-center mb-3">GitHub Activities</figcaption>
             <a href="https://github.com/haoyuehx" target="_blank" rel="noopener noreferrer"
@@ -18,6 +25,7 @@
                     class="img-fluid d-block mx-auto" width="1000" loading="lazy">
             </a>
         </figure>
+        {{ end }}
         <div class="text-center pt-4">
             {{ with .Params.links }}
             {{ range sort . "weight" }}
@@ -31,11 +39,34 @@
     </div>
 </div>
 
+{{ if not $projectKey }}
+{{ $scratch := newScratch }}
+{{ $scratch.Set "visibleTags" (slice) }}
+{{ range $files }}
+    {{ range .Params.project_tags }}
+        {{ $scratch.Add "visibleTags" (slice .) }}
+    {{ end }}
+{{ end }}
+<div class="container mb-5">
+    <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Filter projects">
+        <i class="fas fa-filter" aria-hidden="true"></i>
+        <div id="filters" class="button-group">
+            {{ range sort (uniq ($scratch.Get "visibleTags")) }}
+            {{ $name := . }}
+            {{ $slug := $name | urlize }}
+            {{ $selector := printf ".js-iso-%s" $slug }}
+            <input type="checkbox" class="btn-check" id="{{ $selector }}" autocomplete="off" data-filter="{{ $selector }}">
+            <label class="button" for="{{ $selector }}">{{ $name }}</label>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
+
 <!-- List of files inside this project, rendering as cards like the main projects page -->
-{{ $files := .RegularPages.ByPublishDate.Reverse }}
 {{ if gt (len $files) 0 }}
 <div class="container mb-5">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="project-files">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="blogposts">
         {{ range $files }}
             {{ partial "card_project.html" . }}
         {{ end }}

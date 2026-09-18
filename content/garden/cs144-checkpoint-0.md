@@ -3,6 +3,8 @@ title: "CS144 Checkpoint 0：从 HTTP 客户端到有限容量字节流"
 date: 2026-08-08
 lastmod: 2026-08-08
 garden_tags: ["Computer Network", "CS144", "C++", "HTTP"]
+project: "cs144"
+project_tags: ["CS144", "Computer Network"]
 draft: false
 summary: "记录 CS144 Checkpoint 0 的实现过程：用 TCP socket 发送 HTTP 请求、设计有限容量 ByteStream，以及编译、单元测试和网络超时中遇到的问题。"
 status: "seeding"
@@ -372,4 +374,3 @@ Checkpoint 0 的代码量并不大，但它让我把几个原本分散的概念�
 - 单元测试的失败步骤往往比最终错误信息更能说明状态机哪里错了。
 
 最终进度是：ByteStream 的功能、压力和性能测试全部通过；`webget` 可以通过编译和 bug-checker，但依赖外部服务器的测试仍需要在网络条件合适时重新确认。
-

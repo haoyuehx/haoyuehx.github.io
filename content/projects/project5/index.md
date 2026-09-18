@@ -1,10 +1,13 @@
 ---
 title: "MIT 6.S081"
 date: 2025-07-07
+lastmod: 2025-07-07
 draft: false
-project_tags: ["Operating System"]
+slug: "mit-6s081"
+aliases: ["/projects/project5/"]
+project_tags: ["Operating System", "xv6", "RISC-V"]
 status: "growing"
-summary: " "
+summary: "围绕 xv6 完成 Unix utilities、系统调用、页表与并发等操作系统实验。"
 weight: 5
 ---
 

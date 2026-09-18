@@ -1,11 +1,14 @@
 ---
-title: "CSAPP lab"
+title: "CS:APP Labs"
 date: 2025-07-21
+lastmod: 2025-07-21
 draft: false
 math: true
-project_tags: ["csapp"]
+slug: "csapp-labs"
+aliases: ["/projects/project6/"]
+project_tags: ["CS:APP", "Computer Systems", "x86-64"]
 status: "seeding"
-summary: " "
+summary: "通过 Bomb Lab 等实验理解汇编、程序执行、内存层次与系统级编程。"
 weight: 6
 ---
 

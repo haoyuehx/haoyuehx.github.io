@@ -1,10 +1,13 @@
 ---
 title: "NJU PA"
 date: 2025-02-21
+lastmod: 2025-02-21
 draft: false
-project_tags: ["nju PA","Computer Systems"]
+slug: "nju-pa"
+aliases: ["/projects/project4/"]
+project_tags: ["NJU PA", "Computer Systems", "RISC-V"]
 status: "growing"
-summary: " "
+summary: "基于 NEMU、AM 和 nanos-lite，从指令执行开始逐步理解计算机系统如何运行。"
 weight: 4
 ---
 

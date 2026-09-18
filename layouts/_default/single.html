@@ -2,6 +2,18 @@
 
 <div class="container mt-6 items-start gap-x-10 md:flex">
 
+    {{ with .Params.project }}
+    {{ $projectPage := site.GetPage (printf "/projects/%s" .) }}
+    {{ with $projectPage }}
+    <div class="pt-3">
+        <a class="btn btn-sm btn-link px-0" href="{{ .RelPermalink }}">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            返回 {{ .Title }}
+        </a>
+    </div>
+    {{ end }}
+    {{ end }}
+
     <div class="py-4 rounded-3">
         <div class="container-fluid py-2">
             <h1 class="display-2 mb-4 text-center">{{ .Title }}</h1>

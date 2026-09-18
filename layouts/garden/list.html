@@ -13,12 +13,23 @@
 <!-- Filter Buttons -->
 <div class="container mb-5">
 
+    {{ $posts := where .Pages "Params.project" "eq" nil }}
+    {{ $scratch := newScratch }}
+    {{ $scratch.Set "visibleTags" (slice) }}
+    {{ range $posts }}
+        {{ range .Params.garden_tags }}
+            {{ $scratch.Add "visibleTags" (slice .) }}
+        {{ end }}
+    {{ end }}
+
     <!-- Multiple checkboxes option -->
     <div class="btn-toolbar mb-2 bio" role="toolbar" aria-label="Toolbar with button groups">
         <i class="fas fa-filter"></i>
         <div id="filters" class="button-group">
-            {{ range $name, $taxonomy := .Site.Taxonomies.garden_tags }}
-            {{ $btnid := $name | printf ".js-iso-%s"}}
+            {{ range sort (uniq ($scratch.Get "visibleTags")) }}
+            {{ $name := . }}
+            {{ $slug := $name | urlize }}
+            {{ $btnid := printf ".js-iso-%s" $slug }}
             <input type="checkbox" class="btn-check" id="{{ $btnid }}" autocomplete="off" data-filter="{{ $btnid }}">
             <label class="button" for="{{ $btnid }}">{{ $name }}</label>  
             {{ end }}
@@ -44,7 +55,7 @@
 <!-- Garden Post Cards -->
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="blogposts">
-        {{ range .Pages.ByPublishDate.Reverse }}
+        {{ range $posts.ByPublishDate.Reverse }}
         {{ partial "card_garden.html" . }}
         {{ end }}
      </div>

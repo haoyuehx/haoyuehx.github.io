@@ -22,7 +22,8 @@
             {{ if .Summary }} <p class="subheading">{{ .Summary }}</p> {{ end }}
             {{ end }}
             <div class="row row-cols-1 g-4 mb-5">
-                {{ range ( where site.RegularPages "Section" "garden" | first 6 ) }}
+                {{ $gardenPosts := where (where site.RegularPages "Section" "garden") "Params.project" "eq" nil }}
+                {{ range (first 6 $gardenPosts) }}
                 {{ partial "home_garden.html" . }}
                 {{ end }}
             </div>
@@ -44,7 +45,8 @@
             {{ end }}
             {{ end }}
             <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-                {{ range ( where site.RegularPages "Section" "projects" | first 6 ) }}
+                {{ $projectSection := site.GetPage "section" "projects" }}
+                {{ range (first 6 $projectSection.Pages.ByPublishDate.Reverse) }}
                 {{ partial "home_project.html" . }}
                 {{end}}
             </div>
