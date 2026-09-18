@@ -9,7 +9,11 @@
         {{ if $img }}
         {{ $img = $img.Fit "2000x2000" }}
         {{ with $img }}
-        <img src="{{ .Permalink }}" alt="{{ $.Title }}" class="card-img-top p-5">
+        <img src="{{ .Permalink }}" alt="{{ $.Title }}" class="card-img-top project-card-cover" loading="lazy">
+        {{ end }}
+        {{ else }}
+        {{ with .Params.cover }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-img-top project-card-cover" loading="lazy">
         {{ end }}
         {{ end }}
         <div class="card-body">

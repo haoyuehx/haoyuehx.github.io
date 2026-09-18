@@ -5,6 +5,7 @@ lastmod: 2026-08-11
 garden_tags: ["Computer Network", "CS144", "C++", "TCP"]
 project: "cs144"
 project_tags: ["CS144", "Computer Network"]
+cover: "/images/cs144/checkpoint-1.webp"
 draft: false
 summary: "记录 CS144 Checkpoint 1 Reassembler 的设计与实现：接收窗口、区间裁剪与合并、即时组装、EOF 处理，以及重叠片段和容量限制带来的问题。"
 status: "seeding"

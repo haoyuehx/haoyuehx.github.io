@@ -5,6 +5,7 @@ lastmod: 2026-08-21
 garden_tags: ["Computer Network", "CS144", "C++", "TCP"]
 project: "cs144"
 project_tags: ["CS144", "Computer Network"]
+cover: "/images/cs144/checkpoint-3.webp"
 draft: false
 summary: "记录 CS144 Checkpoint 3 的实现过程：TCPSender 如何填满接收窗口、管理未确认报文、处理累计 ACK，并用 RTO、指数退避和零窗口探测实现可靠发送。"
 status: "seeding"

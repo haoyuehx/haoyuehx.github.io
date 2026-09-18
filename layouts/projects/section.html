@@ -36,6 +36,11 @@
             {{ end }}
             {{ end }}
         </div>
+        {{ with .Params.cover }}
+        <figure class="project-hero-cover mt-4">
+            <img src="{{ . | relURL }}" alt="{{ $.Title }} cover" loading="eager">
+        </figure>
+        {{ end }}
     </div>
 </div>
 

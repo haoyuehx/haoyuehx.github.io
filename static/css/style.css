@@ -787,6 +787,36 @@ button.anchor {
     transform: scale(1.03);
 }
 
+.project-card-cover {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center 24%;
+    background: #eef2f7;
+}
+
+.card.top-highlight {
+    overflow: hidden;
+}
+
+.article-cover,
+.project-hero-cover {
+    width: 100%;
+    margin: 0 0 2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eef2f7;
+}
+
+.article-cover img,
+.project-hero-cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center 24%;
+}
+
 /* 文字截断优化 */
 .card-title {
     display: -webkit-box;

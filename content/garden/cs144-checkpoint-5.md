@@ -5,6 +5,7 @@ lastmod: 2026-08-24
 garden_tags: ["Computer Network", "CS144", "C++", "ARP", "Ethernet"]
 project: "cs144"
 project_tags: ["CS144", "Computer Network"]
+cover: "/images/cs144/checkpoint-5.webp"
 draft: false
 summary: "记录 CS144 Checkpoint 5 NetworkInterface 的设计与实现：区分最终目标与下一跳，用 ARP 解析 MAC 地址，缓存待发送数据报，并处理以太网帧收发和超时。"
 status: "seeding"
