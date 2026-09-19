@@ -3,7 +3,7 @@ title: "buaa co link"
 date: 2025-12-06
 lastmod: 2025-12-06
 draft: false
-garden_tags: ["Computer Organization"]
+garden_tags: ["Computer Architecture"]
 summary: " "
 status: "growing"
 ---

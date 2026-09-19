@@ -3,7 +3,7 @@ title: "Git 使用教程"
 date: 2026-03-14
 lastmod: 2026-03-14
 draft: false
-garden_tags: ["Linux", "Git"]
+garden_tags: ["Developer Tools"]
 summary: " "
 status: "seeding"
 ---

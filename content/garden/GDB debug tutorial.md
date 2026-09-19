@@ -3,7 +3,7 @@ title: "GDB debug tutorial"
 date: 2025-02-19
 lastmod: 2025-02-19
 draft: false
-garden_tags: ["gdb", "debug"]
+garden_tags: ["Developer Tools", "Debugging"]
 summary: "参考 https://linuxconfig.org/gdb-debugging-tutorial-for-beginners"
 status: "evergreen"
 ---

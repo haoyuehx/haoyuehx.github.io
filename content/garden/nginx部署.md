@@ -3,7 +3,7 @@ title: "使用nginx部署网站"
 date: 2025-02-10
 lastmod: 2025-02-10
 draft: false
-garden_tags: ["web服务器", "nginx"]
+garden_tags: ["Web & DevOps"]
 summary: " "
 status: "growing"
 ---
@@ -76,4 +76,3 @@ sudo tail -f /var/log/nginx/access.log      #这个命令将会实时输出访�
 ```bash
 nslookup -type=NS haoyuehxのblog.652205015.xyz
 ```
-

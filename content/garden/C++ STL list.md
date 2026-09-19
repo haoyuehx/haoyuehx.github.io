@@ -4,7 +4,7 @@ date: 2025-02-12
 lastmod: 2025-02-12
 draft: false
 math: true
-garden_tags: ["algorithm", "链表", "stl"]
+garden_tags: ["Data Structures"]
 summary: " "
 status: "evergreen"
 ---

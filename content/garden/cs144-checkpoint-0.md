@@ -2,9 +2,9 @@
 title: "CS144 Checkpoint 0：从 HTTP 客户端到有限容量字节流"
 date: 2026-08-08
 lastmod: 2026-08-08
-garden_tags: ["Computer Network", "CS144", "C++", "HTTP"]
+garden_tags: ["Networking", "CS144"]
 project: "cs144"
-project_tags: ["CS144", "Computer Network"]
+project_tags: ["CS144", "Networking"]
 cover: "/images/cs144/checkpoint-0.webp"
 draft: false
 summary: "记录 CS144 Checkpoint 0 的实现过程：用 TCP socket 发送 HTTP 请求、设计有限容量 ByteStream，以及编译、单元测试和网络超时中遇到的问题。"

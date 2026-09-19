@@ -4,7 +4,7 @@ date: 2025-12-11
 lastmod: 2025-12-11
 draft: false
 math: true
-garden_tags: ["algorithm"]
+garden_tags: ["Algorithms", "Strings"]
 summary: " "
 status: "growing"
 ---
@@ -266,4 +266,3 @@ int main() {
     return 0;
 }
 ```
-

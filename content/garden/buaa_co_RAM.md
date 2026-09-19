@@ -4,7 +4,7 @@ date: 2025-12-13
 lastmod: 2025-12-13
 draft: false
 math: true
-garden_tags: ["Computer Organization"]
+garden_tags: ["Computer Architecture"]
 summary: " "
 status: "growing"
 ---

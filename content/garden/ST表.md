@@ -3,7 +3,7 @@ title: "ST表模板"
 date: 2025-02-19
 lastmod: 2025-02-19
 draft: false
-garden_tags: ["algorithm", "模板"]
+garden_tags: ["Algorithms", "Data Structures", "Templates"]
 summary: " "
 status: "seeding"
 ---

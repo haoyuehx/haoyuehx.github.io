@@ -3,7 +3,7 @@ title: "C语言计算器"
 date: 2025-06-18
 lastmod: 2025-06-18
 draft: false
-garden_tags: ["数据结构"]
+garden_tags: ["Data Structures"]
 summary: " "
 status: "evergreen"
 ---

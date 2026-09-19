@@ -47,20 +47,13 @@
                     {{ partial "status.html" . }}
                 </div>
                 <div class="col-sm-8" style="text-align: right;">
-                    {{ with .Params.tags }}
-                    {{ range . }}
+                    {{ $tagScratch := newScratch }}
+                    {{ $tagScratch.Set "displayTags" (slice) }}
+                    {{ range .Params.tags }}{{ $tagScratch.Add "displayTags" (slice .) }}{{ end }}
+                    {{ range .Params.garden_tags }}{{ $tagScratch.Add "displayTags" (slice .) }}{{ end }}
+                    {{ range .Params.project_tags }}{{ $tagScratch.Add "displayTags" (slice .) }}{{ end }}
+                    {{ range uniq ($tagScratch.Get "displayTags") }}
                     <span class="badge tag-badge">{{ . }}</span>
-                    {{ end }}
-                    {{ end }}
-                    {{ with .Params.garden_tags }}
-                    {{ range . }}
-                    <span class="badge tag-badge">{{ . }}</span>
-                    {{ end }}
-                    {{ end }}
-                    {{ with .Params.project_tags }}
-                    {{ range . }}
-                    <span class="badge tag-badge">{{ . }}</span>
-                    {{ end }}
                     {{ end }}
                 </div>
             </div>

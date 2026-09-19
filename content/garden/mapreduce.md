@@ -2,7 +2,7 @@
 title: "MapReduce分布式系统"
 date: 2026-07-06
 lastmod: 2026-07-06
-garden_tags: ["Distribute system", "6.5840", "MapReduce"]
+garden_tags: ["Distributed Systems"]
 draft: false
 summary: "记录 6.5840 MapReduce Lab 的实现过程：RPC 协议、任务调度、worker 执行、容错与测试。"
 status: "seeding"

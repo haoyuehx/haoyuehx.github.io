@@ -2,9 +2,9 @@
 title: "CS144 Checkpoint 6：最长前缀匹配与 IPv4 路由转发"
 date: 2026-08-28
 lastmod: 2026-08-28
-garden_tags: ["Computer Network", "CS144", "C++", "IPv4", "Router"]
+garden_tags: ["Networking", "CS144"]
 project: "cs144"
-project_tags: ["CS144", "Computer Network"]
+project_tags: ["CS144", "Networking"]
 cover: "/images/cs144/checkpoint-6.webp"
 draft: false
 summary: "记录 CS144 Checkpoint 6 Router 的设计与实现：保存路由规则、执行最长前缀匹配、区分下一跳与输出接口，并正确处理 TTL、IPv4 校验和与默认路由。"

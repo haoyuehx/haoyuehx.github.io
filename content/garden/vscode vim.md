@@ -3,7 +3,7 @@ title: "vscode vim keyboard"
 date: 2025-07-27
 lastmod: 2025-07-27
 draft: false
-garden_tags: ["vim"]
+garden_tags: ["Developer Tools"]
 summary: " "
 status: "seeding"
 ---

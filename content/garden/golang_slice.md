@@ -3,7 +3,7 @@ title: "Go Slice：使用、传参语义与底层实现"
 date: 2026-08-31
 lastmod: 2026-08-31
 draft: false
-garden_tags: ["golang"]
+garden_tags: ["Data Structures"]
 summary: "从 reverse(nums[i+1:]) 出发，理解 Go Slice 的三字段结构、共享底层数组、append 扩容机制与常见陷阱。"
 status: "evergreen"
 ---

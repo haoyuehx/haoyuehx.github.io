@@ -4,7 +4,7 @@ date: 2025-12-07
 lastmod: 2025-12-07
 draft: false
 math: true
-garden_tags: ["algorithm"]
+garden_tags: ["Algorithms", "Math"]
 summary: " "
 status: "growing"
 ---

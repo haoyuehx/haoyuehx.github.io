@@ -3,7 +3,7 @@ title: "ssh连接"
 date: 2025-06-18
 lastmod: 2025-06-18
 draft: false
-garden_tags: ["web服务器"]
+garden_tags: ["Web & DevOps"]
 summary: " "
 status: "evergreen"
 --- 
@@ -45,4 +45,3 @@ sudo chown -R new_username:new_username /home/new_username/.ssh
 ```
 ssh -i ~/.ssh/your_key new_username@your_server_ip
 ```
-

@@ -5,7 +5,7 @@ lastmod: 2026-08-28
 draft: false
 project_key: "cs144"
 cover: "/images/cs144/checkpoint-0.webp"
-project_tags: ["Computer Network", "C++", "TCP/IP"]
+project_tags: ["Networking", "CS144"]
 status: "growing"
 summary: "Building a network stack step by step: byte streams, TCP, ARP, network interfaces, and IPv4 routing."
 weight: 7

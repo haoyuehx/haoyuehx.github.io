@@ -3,7 +3,7 @@ title: "AVL树"
 date: 2025-06-03
 lastmod: 2025-06-03
 draft: false
-garden_tags: ["algorithm", "查找", "数据结构","avl_tree"]
+garden_tags: ["Algorithms", "Data Structures"]
 summary: " "
 status: "growing"
 ---

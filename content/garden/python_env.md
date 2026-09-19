@@ -3,7 +3,7 @@ title: "python环境配置"
 date: 2025-03-14
 lastmod: 2025-03-18
 draft: false
-garden_tags: ["python"]
+garden_tags: ["Developer Tools"]
 summary: " "
 status: "growing"
 ---
