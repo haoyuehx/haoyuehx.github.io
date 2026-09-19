@@ -31,7 +31,7 @@
             <h4>Tags</h4>
             <div class="tag-cloud">
                 {{ range .Params.tags }}
-                <span class="badge bg-light text-dark">{{ . }}</span>
+                <span class="badge bg-light text-dark">{{ index site.Data.library_tag_labels . | default . }}</span>
                 {{ end }}
             </div>
 

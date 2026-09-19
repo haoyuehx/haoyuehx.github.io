@@ -7,17 +7,17 @@ slug: "nju-pa"
 aliases: ["/projects/project4/"]
 project_tags: ["NJU PA", "Computer Systems", "RISC-V"]
 status: "growing"
-summary: "基于 NEMU、AM 和 nanos-lite，从指令执行开始逐步理解计算机系统如何运行。"
+summary: "Exploring how computer systems work through NEMU, Abstract Machine, and nanos-lite."
 weight: 4
 ---
 
 ## PA 1
 ### pa 1.1
-#### 运行第一个客户程序
+#### Run the first guest program
 
-##### 问题1 错误信息
+##### Issue 1: Error message
 
-进入nemu文件夹，运行```make run```得到
+In the `nemu` directory, run `make run` to get:
 ```shell
 + CC src/nemu-main.c
 + CC src/engine/interpreter/init.c
@@ -67,10 +67,9 @@ For help, type "help"
 riscv32-nemu-interpreter: src/monitor/monitor.c:36: void welcome(): Assertion `0' failed.
 make: *** [/home/haoyue/ics2024/nemu/scripts/native.mk:38: run] Aborted (core dumped)
 ```
-注意到shell里面的这句话'Please remove me in the source code and compile NEMU again.
-riscv32-nemu-interpreter: src/monitor/monitor.c:36: void welcome(): Assertion `0' failed.'
+Notice the shell message, "Please remove me in the source code and compile NEMU again," followed by the assertion failure in `welcome()`.
 
-首先找到```src/monitor/monitor.c```将
+First, locate `src/monitor/monitor.c`:
 
 ```c
 static void welcome() {
@@ -85,31 +84,31 @@ static void welcome() {
   # assert(0);
 }
 ```
-后两行注释掉，nemu就可以正确运行。
+Comment out the last two lines. NEMU should then run correctly.
 
-##### 问题2 在运行NEMU之后直接键入q退出, 你会发现终端输出了一些错误信息. 
+##### Issue 2: Entering `q` immediately after starting NEMU prints an error
 ```shell
 (nemu) q
 make: *** [/home/haoyue/ics2024/nemu/scripts/native.mk:38: run] Error 1
 ```
-使用lldb debug
+Debug with LLDB.
 ```shell
 haoyue@haoyue:~/ics2024/nemu$ lldb ./build/riscv32-nemu-interpreter 
 (lldb) target create "./build/riscv32-nemu-interpreter"
 Current executable set to '/home/haoyue/ics2024/nemu/build/riscv32-nemu-interpreter' (x86_64).
 ```
-首先找到键入q后调用的函数
+First, find the function called when `q` is entered.
 ```c
 static int cmd_q(char *args) {
   return -1;
 }
 ```
-添加断点
+Set a breakpoint.
 ```shell
 (lldb) b cmd_q
 Breakpoint 1: where = riscv32-nemu-interpreter`cmd_q at sdb.c:53:3, address = 0x00000000000039f0
 ```
-运行,输入q,单步调试
+Run the program, enter `q`, and step through the code.
 ```shell
 (lldb) run
 Process 119418 launched: '/home/haoyue/ics2024/nemu/build/riscv32-nemu-interpreter' (x86_64)
@@ -139,7 +138,7 @@ Process 119418 stopped
    55  	
    56  	static int cmd_help(char *args);
 ```
-发现返回```is_exit_status_bad()```
+The return path calls `is_exit_status_bad()`.
 ```shell
 (lldb) s
 Process 119418 stopped
@@ -151,7 +150,7 @@ Process 119418 stopped
 -> 34  	  return is_exit_status_bad();
    35  	}
 ```
-发现good值是1
+The value of `good` is 1.
 ```shell
 (lldb) s
 Process 119418 stopped
@@ -165,20 +164,20 @@ Process 119418 stopped
 (lldb) print good
 (int) 1
 ```
-应该修改cmd_q
+Modify `cmd_q`.
 ```c
 static int cmd_q(char *args) {
   nemu_state.state = NEMU_QUIT;
   return -1;
 }
 ```
-#### 补全代码
-##### 单步执行
-|   命令   |     格式     |  使用举例   |                          说明                          |
+#### Complete the implementation
+##### Single-step execution
+| Command | Syntax | Example | Description |
 | :------: | :----------: | :---------: | :----------------------------------------------------: |
-| 单步执行 | ```si [N]``` | ```si 10``` | 让程序单步执行N条指令后暂停执行,当N没有给出时, 缺省为1 |
+| Single step | `si [N]` | `si 10` | Execute N instructions and pause; defaults to 1 when N is omitted. |
 
-```cmd_table```添加命令
+Add the command to `cmd_table`.
 ```C
 static struct {
   const char *name;
@@ -192,7 +191,7 @@ static struct {
     /* TODO: Add more commands */
 };
 ```
-实现方法
+Implementation:
 ```C
 static int cmd_is(char* args)
 {
@@ -215,12 +214,12 @@ static int cmd_is(char* args)
 }
 ```
 
-##### 打印寄存器
-|     命令     |       格式        |   使用举例   |      说明      |
+##### Display registers
+| Command | Syntax | Example | Description |
 | :----------: | :---------------: | :----------: | :------------: |
-| 打印程序状态 | ```info SUBCMD``` | ```info r``` | 打印寄存器状态 |
+| Show program state | `info SUBCMD` | `info r` | Display register values. |
 
-```cmd_table```添加命令
+Add the command to `cmd_table`.
 ```C
 static struct {
   const char *name;
@@ -235,7 +234,7 @@ static struct {
     /* TODO: Add more commands */
 };
 ```
-实现方法，调用```isa_reg_display()```
+Implement it by calling `isa_reg_display()`.
 ```C
 static int cmd_info(char* args)
 {
@@ -257,7 +256,7 @@ static int cmd_info(char* args)
     return 0;
 }
 ```
-```isa_reg_display()```实现方法
+Implementation of `isa_reg_display()`:
 ```C
 void isa_reg_display()
 {
@@ -279,13 +278,12 @@ word_t isa_reg_str2val(const char *s, bool *success) {
 }
 ```
 
-##### 扫描内存
-|                  命令                  |      格式      |    使用举例     |                  说明                  |
+##### Examine memory
+| Command | Syntax | Example | Description |
 | :------------------------------------: | :------------: | :-------------: | :------------------------------------: |
-|                扫描内存                | ```x N EXPR``` | ```x 10 $esp``` | 求出表达式EXPR的值, 将结果作为起始内存 |
-| 地址, 以十六进制形式输出连续的N个4字节 |
+| Examine memory | `x N EXPR` | `x 10 $esp` | Evaluate `EXPR` as the starting address and print N consecutive 4-byte words in hexadecimal. |
 
-```cmd_table```添加命令
+Add the command to `cmd_table`.
 ```C
 static struct {
     const char* name;
@@ -301,12 +299,12 @@ static struct {
     /* TODO: Add more commands */
 };
 ```
-实现方法，调用```vaddr_read(vaddr_t addr, int len)```
-在```sdb.h```文件添加一行
+Implement it by calling `vaddr_read(vaddr_t addr, int len)`.
+Add a declaration to `sdb.h`:
 ```C
 word_t vaddr_read(vaddr_t addr, int len);
 ```
-```cmd_x(char* args)```实现
+Implementation of `cmd_x(char* args)`:
 ```C
 static int cmd_x(char* args)
 {
@@ -348,14 +346,14 @@ static int cmd_x(char* args)
 }
 ```
 ### pa1.2
-主要修改 /nemu/src/monitor/expr.c
+The main changes are in `/nemu/src/monitor/expr.c`.
 
-#### 添加cmd_p命令
-首先，和前几个命令一样在```sdb.c```文件里添加```static int cmd_p(char* args);```
+#### Add the `cmd_p` command
+As with the previous commands, first add `static int cmd_p(char* args);` to `sdb.c`.
 
-需要实现的功能：
-1. 检测输入是否正确
-2. 如果输入正确，计算表达式的值
+Required behavior:
+1. Validate the input.
+2. If valid, evaluate the expression.
 
 ```C
 static int cmd_p(char* args)
@@ -375,24 +373,24 @@ static int cmd_p(char* args)
 }
 ```
 
-写完```static int cmd_p(char* args)```完善```expr(args, &success)```
+After implementing `cmd_p(char* args)`, complete `expr(args, &success)`.
 
-#### 正则表达式识别token
-首先在```enum```里添加```token```类型
-```enum``` 枚举类型是一种可以由用户自定义数据集的数据类型。
- 枚举类型的每一个枚举值都**对应一个整型数**，默认情况下，第一个枚举值的值是0，然后依次增1，但也可以显示初始化任意一个枚举值对应的整形数，没定义的枚举值默认情况下在其前一个枚举值的对应整型数上加1.
+#### Recognize tokens with regular expressions
+First, add the token types to the `enum`.
+An `enum` is a user-defined set of named integer values.
+Each member **corresponds to an integer**. By default the first is 0 and subsequent values increase by 1, although values can be assigned explicitly.
 
 ```C
 enum {
     TK_NOTYPE = 256,
     TK_EQ,      //257
     /* TODO: Add more token types */
-    TK_HEX, // 十六进制整数
-    TK_UINT, // 十进制整数
-    TK_INT, // 负整数
+    TK_HEX, // hexadecimal integer
+    TK_UINT, // decimal integer
+    TK_INT, // negative integer
 };
 ```
-在```rules[]```数组里添加新的正则表达对应
+Add the corresponding regular expressions to `rules[]`:
 
 ```C
 static struct rule {
@@ -404,29 +402,29 @@ static struct rule {
      * Pay attention to the precedence level of different rules.
      */
 
-    { "0x[0-9AaBbCcDdEeFf]+", TK_HEX }, // 十六进制整数
-    { "[0-9]+", TK_UINT }, // 十进制整数
-    { "-[0-9]+", TK_INT }, // 负整数
+    { "0x[0-9AaBbCcDdEeFf]+", TK_HEX }, // hexadecimal integer
+    { "[0-9]+", TK_UINT }, // decimal integer
+    { "-[0-9]+", TK_INT }, // negative integer
     { " +", TK_NOTYPE }, // spaces
     { "\\+", '+' }, // plus
     { "==", TK_EQ }, // equal
-    { "-", '-' }, // 减号
-    { "\\*", '*' }, // 乘号
-    { "/", '/' }, // 除号
-    { "\\(", '(' }, // 左括号
-    { "\\)", ')' }, // 右括号
+    { "-", '-' }, // minus sign
+    { "\\*", '*' }, // multiplication
+    { "/", '/' }, // division
+    { "\\(", '(' }, // left parenthesis
+    { "\\)", ')' }, // right parenthesis
 };
 ```
-最重要的部分:**token识别**
+The most important part is **token recognition**.
 
-主要思路:
-1. 通过正则表达式进行分词,得到token的位置和长度
-2. 首先对token长度进行判断
-3. 通过正则表达式识别出的token_type进行分类存储
+Approach:
+1. Tokenize with regular expressions and record each token's position and length.
+2. Check the token length.
+3. Store tokens according to their recognized `token_type`.
 
-注意点:
-1. 每次存储完之后```nr_token```自增
-2. 存储时```tokens[nr_token].str```最后一位置为```\0```
+Notes:
+1. Increment `nr_token` after storing each token.
+2. Terminate `tokens[nr_token].str` with `\0`.
 
 ```c
 static bool make_token(char* e)
@@ -464,14 +462,14 @@ static bool make_token(char* e)
                     Assert(substr_len < 32, "hex/uint token too long");
                     strncpy(tokens[nr_token].str, substr_start, substr_len);
                     tokens[nr_token].str[substr_len] = '\0';
-                    tokens[nr_token].type = rules[i].token_type; // 设置类型
+                    tokens[nr_token].type = rules[i].token_type; // set the type
                     nr_token++;
                     break;
                 case TK_INT:
                     Assert(substr_len < 32, "int token too long");
                     strncpy(tokens[nr_token].str, substr_start, substr_len);
                     tokens[nr_token].str[substr_len] = '\0';
-                    tokens[nr_token].type = rules[i].token_type; // 设置类型
+                    tokens[nr_token].type = rules[i].token_type; // set the type
                     nr_token++;
                     break;
                 case '+':
@@ -482,7 +480,7 @@ static bool make_token(char* e)
                 case ')':
                     strncpy(tokens[nr_token].str, substr_start, substr_len);
                     tokens[nr_token].str[substr_len] = '\0';
-                    tokens[nr_token].type = rules[i].token_type; // 设置类型
+                    tokens[nr_token].type = rules[i].token_type; // set the type
                     nr_token++;
                     break;
                 default:
@@ -502,18 +500,18 @@ static bool make_token(char* e)
 }
 ```
 
-#### 根据token求表达式的值
-主要思路:递归
+#### Evaluate expressions from tokens
+The main idea is recursion.
 ```bnf
-<expr> ::= <number>    # 一个数是表达式
-  | "(" <expr> ")"     # 在表达式两边加个括号也是表达式
-  | <expr> "+" <expr>  # 两个表达式相加也是表达式
-  | <expr> "-" <expr>  # 接下来你全懂了
+<expr> ::= <number>    # a number is an expression
+  | "(" <expr> ")"     # a parenthesized expression is an expression
+  | <expr> "+" <expr>  # the sum of two expressions is an expression
+  | <expr> "-" <expr>  # likewise for subtraction
   | <expr> "*" <expr>
   | <expr> "/" <expr>
 ```
-根据分治法,将大的表达式化为小的表达式进行求值
-代码框架:
+Use divide and conquer to evaluate an expression through smaller subexpressions.
+Code outline:
 ```C
 eval(p, q) {
   if (p > q) {
@@ -536,14 +534,14 @@ eval(p, q) {
   }
 }
 ```
-在一个token表达式中寻找主运算符:
+Find the main operator in a tokenized expression:
 
-- 非运算符的token不是主运算符.
-- 出现在一对括号中的token不是主运算符. 注意到这里不会出现有括号包围整个表达式的情况, 因为这种情况已经在check_parentheses()相应的if块中被处理了.
-- 主运算符的优先级在表达式中是最低的. 这是因为主运算符是最后一步才进行的运算符.
-- 当有多个运算符的优先级都是最低时, 根据结合性, 最后被结合的运算符才是主运算符. 一个例子是1 + 2 + 3, 它的主运算符应该是右边的+.
-要找出主运算符, 只需要将token表达式全部扫描一遍, 就可以按照上述方法唯一确定主运算符.
-代码框架更新
+- A token that is not an operator cannot be the main operator.
+- An operator inside parentheses cannot be the main operator. A fully parenthesized expression has already been handled by `check_parentheses()`.
+- The main operator has the lowest precedence because it is evaluated last.
+- If multiple operators share the lowest precedence, associativity determines which is evaluated last. In `1 + 2 + 3`, the right-hand `+` is the main operator.
+Scan the token sequence once to identify the main operator using these rules.
+Updated code outline:
 ```C
 eval(p, q) {
   if (p > q) {
@@ -562,7 +560,7 @@ eval(p, q) {
     return eval(p + 1, q - 1);
   }
   else {
-    op = the position of 主运算符 in the token expression;
+    op = the position of the main operator in the token expression;
     val1 = eval(p, op - 1);
     val2 = eval(op + 1, q);
 
@@ -576,7 +574,7 @@ eval(p, q) {
   }
 }
 ```
-代码实现
+Implementation:
 ```C
 bool check_parentheses(int p, int q)
 {

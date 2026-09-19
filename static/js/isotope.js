@@ -6,10 +6,20 @@ $blogposts.isotope({itemSelector : '.col'});
 var $checkboxes = $('#filters input');
 
 $checkboxes.change( function() {
+    var all = document.getElementById('js-iso-all');
+    if (all) {
+      if (this === all) {
+        if (all.checked) $checkboxes.not(all).prop('checked', false);
+      } else if (this.checked) {
+        all.checked = false;
+      } else if (!$checkboxes.not(all).is(':checked')) {
+        all.checked = true;
+      }
+    }
     var inclusives = [];
     $checkboxes.each( function( i, elem ) {
       if ( elem.checked ) {
-        inclusives.push( elem.id );
+        inclusives.push( elem.getAttribute('data-filter') );
       }
     });
     var filterValue = inclusives.length ? inclusives.join(', ') : '*';

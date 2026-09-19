@@ -7,18 +7,18 @@ slug: "mit-6s081"
 aliases: ["/projects/project5/"]
 project_tags: ["Operating System", "xv6", "RISC-V"]
 status: "growing"
-summary: "围绕 xv6 完成 Unix utilities、系统调用、页表与并发等操作系统实验。"
+summary: "Operating-systems labs with xv6, from Unix utilities to system calls, page tables, and concurrency."
 weight: 5
 ---
 
 ## Lab1: Xv6 and Unix utilities
 ### Boot xv6
-按照官网给的lab tools page配置一下环境
+Set up the environment following the official lab tools page.
 **Debian or Ubuntu**
 ```shell
 sudo apt-get install git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu 
 ```
-检验安装是否成功
+Verify the installation.
 ```shell
 $ qemu-system-riscv64 --version
 QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.7)
@@ -31,7 +31,7 @@ Copyright (C) 2023 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
-将项目下载下来
+Download the project.
 ```shell
 git clone git://g.csail.mit.edu/xv6-labs-2024
 ```
@@ -39,7 +39,7 @@ git clone git://g.csail.mit.edu/xv6-labs-2024
 ```shell
 $ cd xv6-labs-2024
 $ make qemu
-... # 编译工具和选项
+... # build tools and options
 qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 3 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0
 
 xv6 kernel is booting
@@ -72,34 +72,34 @@ zombie         2 19 32544
 console        3 20 0
 ```
 
-#### vscode 添加clangd LSP
-项目根目录运行
+#### Add clangd LSP support to VS Code
+Run this command in the project root:
 ```shell
 $ bear -- make
 ```
-自动记录 make 的所有编译参数，生成 compile_commands.json，clangd 会自动识别
+This records Make's compilation arguments in `compile_commands.json`, which clangd detects automatically.
 
 ### sleep 
-参考user/中的其他一些程序(例如 user/echo.c 、 user/grep.c 和 user/rm.c)了解命令行参数如何传递给程序。
+Refer to programs in `user/`, such as `user/echo.c`, `user/grep.c`, and `user/rm.c`, to see how command-line arguments are passed.
 
-命令行参数从```main(int argc, char *argv[]) ```传入
+Command-line arguments enter through `main(int argc, char *argv[])`.
 
-argc：Argument Count，参数个数（包含程序名本身）。
+`argc` (argument count) includes the program name.
 
-argv：Argument Vector，参数字符串数组，每个元素是一个 char*
+`argv` (argument vector) is an array of argument strings, each a `char *`.
 
-**注意**：如果用户忘记传递参数，sleep 应该打印一条错误消息。
+**Note:** If the user omits the argument, `sleep` should print an error.
 
-命令行参数以字符串形式传递；可以使用atoi将其转换为整数(在user/ulib.c实现)。
+Arguments are passed as strings; use `atoi` (implemented in `user/ulib.c`) to convert one to an integer.
 
-使用系统调用 sleep，查看xv6文档，找到sleep以及需要使用的write：
+Use the `sleep` system call. Consult the xv6 documentation for `sleep` and the required `write` call:
 
 |System call|Description|
 |----------------------------------|----------------------------------|
 |int sleep(int n)|Pause for n clock ticks.|
 |int write(int fd, char *buf, int n)|Write n bytes from buf to file descriptor fd; returns n.|
 
-根据以上内容就可以完成代码
+With this information, the implementation is straightforward.
 ```C
 //sleep.c
 #include "kernel/types.h"
@@ -124,7 +124,7 @@ int main(int argc, char* argv[])
     exit(0);
 }
 ```
-之后在Makefile里找到第180行添加
+Then add the program around line 180 of the Makefile:
 ```shell
 180 UPROGS=\
 181     $U/_cat\
@@ -145,7 +145,7 @@ int main(int argc, char* argv[])
 196     $U/_wc\ 
 197     $U/_zombie\
 ```
-编译测试
+Build and test.
 ```shell
 $ ./grade-lab-util sleep
 make: 'kernel/kernel' is up to date.
@@ -155,7 +155,7 @@ make: 'kernel/kernel' is up to date.
 ```
 
 ### pingpong
-主要使用的系统调用
+The main system calls are:
 | System call                         | Description                                              |
 | ----------------------------------- | -------------------------------------------------------- |
 | int fork()                    | Create a process, return child’s PID.                                 |
@@ -209,20 +209,20 @@ int main(int argc, char* argv[])
         close(p_to_c[1]);
         close(c_to_p[0]);
 
-        wait(0);//等待子进程结束
+        wait(0);// wait for the child process to exit
     }
     exit(0);
 }
 ```
 
-Makefile添加:
+Add it to the Makefile:
 ```shell
 180 UPROGS=\
 ...
 190     $U/_pingpong\
 ```
 
-编译测试
+Build and test.
 ```shell
 $ ./grade-lab-util pingpong
 make: 'kernel/kernel' is up to date.
@@ -230,12 +230,12 @@ make: 'kernel/kernel' is up to date.
 ```
 
 ### primes
-用```pipe```和```fork```实现一个素数筛
+Implement a prime sieve with `pipe` and `fork`.
 ![sieve](./sieve.gif)
 
-核心思想是：每个进程负责一个素数，只传递不能被该素数整除的数字给下一个进程。
+Each process handles one prime and passes only numbers not divisible by it to the next process.
 
-prime函数打印当前素数，fork新的进程，子进程递归调用，父进程将不能被当前数整除的用```pipe```给子进程
+The `prime` function prints the current prime and forks. The child recurses; the parent sends numbers not divisible by the current prime through the pipe.
 
 | System call                         | Description                                              |
 | ----------------------------------- | -------------------------------------------------------- |
@@ -253,8 +253,8 @@ void primes(int) __attribute__((noreturn));
 
 void primes(int fd)
 {
-    int p, n;   //必须局部变量（非static），保证每个递归层有自己独立的管道fd数组。
-    int p_to_c[2];      //static 变量导致管道fd共享，关闭异常，造成进程阻塞和未退出。改为局部变量即可正常退出。
+    int p, n;   // Keep these local so each recursive call has independent pipe descriptors.
+    int p_to_c[2];      // Static descriptors would be shared, causing incorrect closes and blocked processes.
     pipe(p_to_c);
 
     if (read(fd, &p, 4) == 0) {
@@ -307,7 +307,7 @@ int main(int argc, char* argv[])
 191     $U/_primes\
 ```
 
-编译测试
+Build and test.
 ```shell
 $ ./grade-lab-util primes
 make: 'kernel/kernel' is up to date.
@@ -315,8 +315,8 @@ make: 'kernel/kernel' is up to date.
 ```
 
 ### find
-查找目录树中所有指定名称的文件
-主要借鉴代码```user/ls.c```
+Find all files with a given name in a directory tree.
+The implementation is based on `user/ls.c`.
 
 | System call                         | Description                                              |
 | ----------------------------------- | -------------------------------------------------------- |
@@ -329,34 +329,34 @@ make: 'kernel/kernel' is up to date.
 #include "kernel/types.h"
 #include "kernel/stat.h"
 #include "user/user.h"
-#include "kernel/fs.h"      //目录项(directory entry)结构体
-#include "kernel/fcntl.h"   //使用open()是权限限制
+#include "kernel/fs.h"      // directory-entry structure
+#include "kernel/fcntl.h"   // flags for open()
 
 void find(char* path, char* target)
 {
-    char buf[512], *p;  //buf存储目录path,*p操作字符串
-    int fd;             //存储文件描述符
-    struct dirent de;   //目录项
-    struct stat st;     //文件状态
+    char buf[512], *p;  // buf stores the path; p manipulates the string
+    int fd;             // file descriptor
+    struct dirent de;   // directory entry
+    struct stat st;     // file status
 
-    if ((fd = open(path, O_RDONLY)) < 0) {      //只读打开path，通过path映射一个fd
+    if ((fd = open(path, O_RDONLY)) < 0) {      // open path read-only and get a descriptor
         fprintf(2, "find: cannot open %s\n", path);
         return;
     }
 
-    if (fstat(fd, &st) < 0) {   //st写入path文件状态
+    if (fstat(fd, &st) < 0) {   // write file status into st
         fprintf(2, "find: cannot stat %s\n", path);
         close(fd);
         return;
     }
 
-    while (read(fd, &de, sizeof(de)) == sizeof(de)) {   //通过fd逐项读取目录内部的目录项
+    while (read(fd, &de, sizeof(de)) == sizeof(de)) {   // read each directory entry
         if (strlen(path) + 1 + DIRSIZ + 1 > sizeof buf) {
-            // 在构建新的完整路径之前，检查 buf 缓冲区是否足够大。
-            // strlen(path): 当前路径的长度。
-            // + 1: 为路径分隔符 / 留出空间。
-            // + DIRSIZ : 为目录项名称 de.name 留出最大空间。
-            // + 1 : 为字符串结束符 \0 留出空间。
+            // Check that buf can hold the complete path.
+            // strlen(path): length of the current path.
+            // + 1: room for the / separator.
+            // + DIRSIZ: maximum length of de.name.
+            // + 1: room for the terminating \0.
             printf("find: path too long\n");
             break;
         }
@@ -369,8 +369,8 @@ void find(char* path, char* target)
         *p++ = '/';
         memmove(p, de.name, DIRSIZ);
 
-        // 将当前目录项的名称de.name复制到buf中，紧跟在/之后。
-        // 使用memmove而不是strcpy是因为de.name可能不是以\0结尾的(它是一个固定大小的数组 char name[DIRSIZ])。
+        // Copy de.name into buf immediately after /.
+        // Use memmove because the fixed-size de.name array may not end in \0.
         p[DIRSIZ] = 0;
 
         if (stat(buf, &st) < 0) {
@@ -380,10 +380,10 @@ void find(char* path, char* target)
 
         if (strcmp(de.name, ".") == 0 || strcmp(de.name, "..") == 0)
             continue;
-        // 不递归自身和上一级目录
+        // Do not recurse into the current or parent directory.
 
         if (st.type == T_DIR) {
-            //下一级是文件夹就递归
+            // Recurse when the next entry is a directory.
             find(buf, target);
         }
         else if (strcmp(de.name, target) == 0) {
@@ -405,10 +405,10 @@ int main(int argc, char* argv[])
 ```
 
 ### xargs
-xargs工作方式:
-1. 读取标准输入
-2. 把从标准输入读到的内容，作为额外的参数添加到xargs后面指定的命令的末尾。
-3. 然后，它会执行这个由原始命令和新增参数组成的完整命令。
+How `xargs` works:
+1. Read standard input.
+2. Append the input as additional arguments to the specified command.
+3. Execute the command with those arguments.
 
 ```C
 #include "kernel/types.h"
@@ -419,7 +419,7 @@ xargs工作方式:
 
 int main(int argc, char* argv[])
 {
-    char* new_argv[3];  //合并后参数
+    char* new_argv[3];  // combined arguments
     char line_buf[MAX_BUF];
     int current_len = 0;
 
@@ -429,13 +429,13 @@ int main(int argc, char* argv[])
     int initial_arg_count = argc - 1;
 
     while (read(0, line_buf + current_len, 1) > 0) {
-        if (line_buf[current_len] == '\n') {    //遇到换行符直接执行
+        if (line_buf[current_len] == '\n') {    // execute when a newline is reached
             line_buf[current_len] = '\0';
             new_argv[initial_arg_count] = line_buf;
             new_argv[initial_arg_count + 1] = 0; 
 
             if (fork() == 0) {
-                exec(new_argv[0], new_argv);    //执行原始命令
+                exec(new_argv[0], new_argv);    // execute the requested command
                 fprintf(2, "xargs: exec failed\n");
                 exit(1);
             } else { 
