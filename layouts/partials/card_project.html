@@ -3,7 +3,7 @@
     {{ $slug := . | urlize }}
     {{ $.Scratch.Add "project_tags_list" (printf " js-iso-%s" $slug) }}
 {{ end }}
-<div class='col {{ $.Scratch.Get "project_tags_list" }}'>
+<div class='col pb-4 {{ $.Scratch.Get "project_tags_list" }}'>
     <div class="card top-highlight">
         {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
         {{ if $img }}
